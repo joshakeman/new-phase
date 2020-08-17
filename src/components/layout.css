@@ -620,3 +620,23 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+/* Custom styles */
+
+.Subtraction_1 {
+  overflow: visible;
+  width: 100vw;
+  transform: matrix(1,0,0,1,0,0);
+  z-index: 100;
+}
+
+#Subtraction_1 {
+  fill: rgba(243,194,111,1);
+}
+
+.jumbo {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: 10;
+}
