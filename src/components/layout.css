@@ -626,6 +626,7 @@ pre tt:after {
 .main-content {
   width: 960px;
   margin: 0 auto;
+  position: relative;
 }
 
 :root {
@@ -661,6 +662,32 @@ pre tt:after {
 .bullet {
   width: 150px;
   height: 150px;
-  background-color:  rgba(243,194,111,1);
+  background-color:  var(--main-gold-color);
   border-radius: 50%;
+  border: 1px solid black;
+}
+
+#backbone {
+  opacity: 0.47;
+  fill: var(--main-gold-color);
+}
+.backbone {
+  overflow: visible;
+  position: absolute;
+  width: 600px;
+  left: 200px;
+  top: 0;
+  z-index: -10;
+  transform: matrix(1,0,0,1,0,0);
+}
+
+#footer {
+  fill: var(--main-gold-color);
+}
+.footer {
+  overflow: visible;
+  position: absolute;
+  width: 100vw;
+  bottom: 0;
+  transform: matrix(1,0,0,1,0,0);
 }
