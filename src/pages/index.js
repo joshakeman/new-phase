@@ -6,10 +6,15 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
+import Bullets from '../components/bullets'
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <img src={jumbo} class="jumbo"/>
+    <div class="main-content">
+      <Bullets />
+    </div>
   </Layout>
 )
 

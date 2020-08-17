@@ -623,20 +623,44 @@ pre tt:after {
 
 /* Custom styles */
 
-.Subtraction_1 {
+.main-content {
+  width: 960px;
+  margin: 0 auto;
+}
+
+:root {
+  --main-gold-color: rgba(243,194,111,1);
+  --dk-gray: #4E6673; 
+  --med-gray: #718EA4;
+}
+
+.header-bar {
   overflow: visible;
   width: 100vw;
   transform: matrix(1,0,0,1,0,0);
-  z-index: 100;
+  position: absolute;
 }
 
-#Subtraction_1 {
-  fill: rgba(243,194,111,1);
+#header-bar {
+  fill: var(--main-gold-color)
 }
 
 .jumbo {
-  position: absolute;
+  height: 100vh;
   top: 0;
   width: 100vw;
-  z-index: 10;
+}
+
+.bullet-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 600px;
+  margin: -60px auto 0 auto;
+}
+.bullet {
+  width: 150px;
+  height: 150px;
+  background-color:  rgba(243,194,111,1);
+  border-radius: 50%;
 }
