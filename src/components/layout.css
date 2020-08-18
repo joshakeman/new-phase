@@ -667,6 +667,17 @@ pre tt:after {
   border-radius: 50%;
   border: 1px solid black;
 }
+.bullet-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.bullet-text {
+  font-size: 24px;
+  color: #617884;
+  text-align: center;
+}
 
 #backbone {
   opacity: 0.47;
@@ -675,7 +686,7 @@ pre tt:after {
 .backbone {
   overflow: visible;
   position: absolute;
-  width: 600px;
+  width: 800px;
   left: 200px;
   top: 0;
   z-index: -10;
@@ -701,6 +712,7 @@ pre tt:after {
 
 .program-card {
   padding: 10px 0;
+  position: relative;
 }
 
 .program-card>.content-wrap>img {
@@ -719,7 +731,7 @@ pre tt:after {
   font-size: 48px;
   position: absolute;
   left: 360px;
-  top: 220px;
+  top: 80px;
 }
 
 .program-card>.content-wrap>p {
