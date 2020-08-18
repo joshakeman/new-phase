@@ -624,15 +624,16 @@ pre tt:after {
 /* Custom styles */
 
 .main-content {
-  width: 960px;
+  width: 1120px;
   margin: 0 auto;
   position: relative;
 }
 
 :root {
-  --main-gold-color: rgba(243,194,111,1);
+  --main-gold: rgba(243,194,111,1);
   --dk-gray: #4E6673; 
   --med-gray: #718EA4;
+  --para-font: Arial, Helvetica, sans-serif;  
 }
 
 .header-bar {
@@ -643,7 +644,7 @@ pre tt:after {
 }
 
 #header-bar {
-  fill: var(--main-gold-color)
+  fill: var(--main-gold)
 }
 
 .jumbo {
@@ -662,14 +663,14 @@ pre tt:after {
 .bullet {
   width: 150px;
   height: 150px;
-  background-color:  var(--main-gold-color);
+  background-color:  var(--main-gold);
   border-radius: 50%;
   border: 1px solid black;
 }
 
 #backbone {
   opacity: 0.47;
-  fill: var(--main-gold-color);
+  fill: var(--main-gold);
 }
 .backbone {
   overflow: visible;
@@ -682,7 +683,7 @@ pre tt:after {
 }
 
 #footer {
-  fill: var(--main-gold-color);
+  fill: var(--main-gold);
 }
 .footer {
   overflow: visible;
@@ -690,4 +691,35 @@ pre tt:after {
   width: 100vw;
   bottom: 0;
   transform: matrix(1,0,0,1,0,0);
+}
+
+/* Program Cards */
+
+.program-card {
+  
+}
+
+.program-card>.content-wrapper>img {
+  max-width: 450px;
+  margin: 0 20px 0 0;
+}
+
+.program-card>.content-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.program-card>h2 {
+  color: #617884;
+  font-size: 40px;
+  position: absolute;
+  left: 450px;
+  top: 240px;
+}
+
+.program-card>.content-wrapper>p {
+  font-family: var(--para-font);
+  color:#7F7F7F;
+  font-size: 28px;
 }

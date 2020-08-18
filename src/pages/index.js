@@ -7,6 +7,7 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 
 import Bullets from '../components/bullets'
+import ProgramCards from '../components/ProgramCards'
 
 const IndexPage = () => (
   <Layout>
@@ -18,8 +19,7 @@ const IndexPage = () => (
         </path>
       </svg>
       <Bullets />
-      <h2>Stuff</h2>
-      <p>Fugiat ex cillum cupidatat Lorem ullamco mollit est est aute elit mollit. Non exercitation nulla fugiat velit eiusmod sint deserunt minim ea duis non enim duis nostrud. Amet culpa occaecat veniam id. Et cillum Lorem in fugiat deserunt commodo ex officia sint et id nostrud aliqua consequat. Dolore elit ad consequat nulla et est excepteur sint sunt aliquip eiusmod adipisicing eiusmod. Occaecat anim culpa quis eiusmod mollit dolor nostrud in proident nostrud excepteur consequat eiusmod.</p>
+      <ProgramCards />
     </div>
   </Layout>
 )
