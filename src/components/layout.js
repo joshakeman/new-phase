@@ -26,7 +26,9 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div>
+      <div style={{position: 'absolute',
+                  top: 0,
+                  zIndex: -10}}>
         <main>{children}</main>
         {/* <footer>
           <svg class="footer" viewBox="1012.497 0 1949.006 134.001">
