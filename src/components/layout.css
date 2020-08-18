@@ -695,16 +695,20 @@ pre tt:after {
 
 /* Program Cards */
 
-.program-card {
-  
+.programs-wrapper {
+  margin: 20px 0;
 }
 
-.program-card>.content-wrapper>img {
+.program-card {
+  padding: 10px 0;
+}
+
+.program-card>.content-wrap>img {
   max-width: 450px;
   margin: 0 20px 0 0;
 }
 
-.program-card>.content-wrapper {
+.program-card>.content-wrap {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -712,14 +716,33 @@ pre tt:after {
 
 .program-card>h2 {
   color: #617884;
-  font-size: 40px;
+  font-size: 48px;
   position: absolute;
-  left: 450px;
-  top: 240px;
+  left: 360px;
+  top: 220px;
 }
 
-.program-card>.content-wrapper>p {
+.program-card>.content-wrap>p {
   font-family: var(--para-font);
   color:#7F7F7F;
   font-size: 28px;
 }
+
+/* Buttons */
+
+.btn {
+  width: 205px;
+  height: 42px;
+  background-color: var(--med-gray);
+  border-radius: 85px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--para-font);
+  color: white;
+  border: 3px solid var(--dk-gray);
+  border-right: 6px solid var(--dk-gray);
+  border-left: 6px solid var(--dk-gray);
+  cursor: pointer;
+} 
