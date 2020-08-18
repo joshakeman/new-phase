@@ -10,14 +10,14 @@ export default function ProgramCard({ direction, imgSrc, title, copy}) {
                     <img src={imgSrc} />
                     <div class="btn-para-wrap">
                         <p>{copy}</p>
-                        <div class="btn">Learn More</div>
+                        <div class="btn margin-auto">Learn More</div>
                     </div>
                     </>
                 ) : (
                     <>
                     <div class="btn-para-wrap">
                         <p>{copy}</p>
-                        <div class="btn">Learn More</div>
+                        <div class="btn margin-auto">Learn More</div>
                     </div>
                     <img src={imgSrc} />
                     </>
