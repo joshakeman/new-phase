@@ -702,14 +702,14 @@ pre tt:after {
 
 .header-bar {
   overflow: visible;
-  width: 100vw;
-  transform: matrix(1,0,0,1,0,0);
+  /* width:100vw; */
   position: absolute;
   top:0;
 }
 
 #header-bar {
-  fill: var(--main-gold)
+  fill: var(--main-gold);
+  min-height: 120px;
 }
 
 .logo {
