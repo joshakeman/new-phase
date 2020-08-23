@@ -881,13 +881,22 @@ pre tt:after {
 
 /* Phase Component */
 
+.phase-wrapper {
+  height: 700px;
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+}
+
 .phase-content {
   width: 475px;
-  position: absolute;
-  top: 300px;
-  left: 600px;
   animation: fade-in 2.5s ease-in;
   z-index: 20;
+  margin-right: 60px;
+  margin-bottom: 70px;
 }
 
 @keyframes fade-in {
@@ -895,7 +904,7 @@ pre tt:after {
   100% {opacity: 1;}
 }
 
-.phase-content>h2 {
+.phase-copy>h2 {
   color: #F3C26F;
   font-size: 72px;
   font-weight: 100;
@@ -903,7 +912,7 @@ pre tt:after {
   margin-bottom: 0;
 }
 
-.phase-content>p {
+.phase-copy>p {
   color: #F3C26F;
   font-weight: 100;
   font-family: 'Arial';
@@ -925,13 +934,17 @@ pre tt:after {
   border-right: 9px solid #718EA4;
   border-left: 9px solid #718EA4;
   cursor: pointer;
-  z-index: 10;
+  z-index: -10;
   position: absolute;
-  top: 566px;
-  left: 90px;
+  left: 20px;
+  bottom: 50px;
 }
 
 .testimonials>p {
   margin-bottom: 0;
   color: #617884;
+}
+
+.center {
+  margin: 0 auto;
 }

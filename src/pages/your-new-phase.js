@@ -5,7 +5,7 @@ import Phase from '../components/Phase'
 export default function YourNewPhase() {
     return (
         <Layout>
-            <Phase lady="hungry" />
+            <Phase lady="towel" />
         </Layout>
     )
 }
