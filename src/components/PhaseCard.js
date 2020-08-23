@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function ProgramCard({ direction, imgSrc, title, copy}) {
+export default function PhaseCard({ direction, imgSrc, title, copy}) {
     return (
-        <div class="program-card">
+        <div class="phase-card">
             <h2>{title}</h2>
             <div class="content-wrap">
                 {direction === 'LEFT' ? (

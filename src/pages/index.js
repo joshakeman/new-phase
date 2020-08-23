@@ -7,14 +7,13 @@ import Img from "gatsby-image"
 import SEO from "../components/seo"
 
 import Bullets from '../components/bullets'
-import ProgramCards from '../components/ProgramCards'
+import PhaseCards from '../components/PhaseCards'
 
 const IndexPage = ({ data }) => {
   console.log(data)
   return(
   <Layout>
     <SEO title="Home" />
-    {/* <img src={jumbo} class="jumbo"/> */}
     <Img style={{height: '100vh', width: '100vw'}} fluid={data.jumbo.childImageSharp.fluid} />
     <div class="main-content">
       <svg class="backbone" viewBox="2627.12 783.198 1379.939 3784.262">
@@ -22,7 +21,7 @@ const IndexPage = ({ data }) => {
         </path>
       </svg>
       <Bullets />
-      <ProgramCards />
+      <PhaseCards />
     </div>
   </Layout>
   )

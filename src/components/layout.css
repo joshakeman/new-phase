@@ -687,6 +687,19 @@ pre tt:after {
   margin-right: 20px;
 }
 
+.item {
+  font-family: 'festivo_lcbasic';
+  font-size: 40px;
+  color: white;
+  list-style: none;
+  margin-right: 20px;
+  z-index: 10;
+}
+
+#phase-header {
+  margin-right: 8%;
+}
+
 .header-bar {
   overflow: visible;
   width: 100vw;
@@ -724,6 +737,18 @@ pre tt:after {
   margin: -20px auto 0 auto;
 }
 
+.phase-logo {
+  position: absolute;
+  right: 20;
+  top: 20;
+  width: 16%;
+  right: 6%;
+  top: 20px;
+  z-index: 10;
+  opacity: 1;
+  animation: fade-in 1.5s ease-in;
+}
+
 @keyframes fade-in {
   0%   {opacity: 0; top:100px}
   100% {opacity: 1;top:20px;}
@@ -733,6 +758,7 @@ pre tt:after {
   height: 100vh;
   top: 0;
   width: 100vw;
+  min-height: 600px;
 }
 
 .bullet-row {
@@ -786,29 +812,29 @@ pre tt:after {
   transform: matrix(1,0,0,1,0,0);
 }
 
-/* Program Cards */
+/* Phase Cards */
 
-.programs-wrapper {
+.phases-wrapper {
   margin: 20px 0;
 }
 
-.program-card {
+.phase-card {
   padding: 10px 0;
   position: relative;
 }
 
-.program-card>.content-wrap>img {
+.phase-card>.content-wrap>img {
   max-width: 450px;
   margin: 0 20px 0 0;
 }
 
-.program-card>.content-wrap {
+.phase-card>.content-wrap {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.program-card>h2 {
+.phase-card>h2 {
   color: #617884;
   font-size: 96px;
   font-weight: 100;
@@ -818,7 +844,7 @@ pre tt:after {
   font-family: 'amienneregular';
 }
 
-.program-card>.content-wrap>.btn-para-wrap>p {
+.phase-card>.content-wrap>.btn-para-wrap>p {
   font-family: var(--para-font);
   color:#7F7F7F;
   font-size: 28px;
@@ -851,4 +877,18 @@ pre tt:after {
 
 .margin-auto {
   margin: 0 auto;
+}
+
+/* Phase Component */
+
+.phase-content {
+  width: 100%;
+  height: 100%;
+}
+
+.phase-content>h2 {
+  color: #F3C26F;
+  font-size: 40px;
+  font-weight: 100;
+  font-family: 'amienneregular';
 }
