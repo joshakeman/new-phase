@@ -665,6 +665,28 @@ pre tt:after {
   padding: 10px 10px 20px 10px;
 }
 
+.header-wrap>nav{
+  z-index: 10;
+  width: 100%;
+}
+
+.header-wrap>nav>ul {
+  display: flex;
+  z-index: 10;
+  justify-content: flex-end;
+  margin-right: 15%;
+  align-items: flex-end;
+  margin-bottom: 0;
+}
+
+.header-wrap>nav>ul>li {
+  font-family: 'festivo_lcbasic';
+  font-size: 40px;
+  color: white;
+  list-style: none;
+  margin-right: 20px;
+}
+
 .header-bar {
   overflow: visible;
   width: 100vw;
@@ -687,6 +709,17 @@ pre tt:after {
   z-index: 10;
   opacity: 1;
   animation: fade-in 1.5s ease-in;
+}
+
+.logo>img {
+  margin-bottom: 0;
+}
+
+.logo>h4 {
+  color: #617884;
+  font-size: 66px;
+  font-weight: 100;
+  font-family: 'amienneregular';
 }
 
 @keyframes fade-in {
@@ -775,14 +808,15 @@ pre tt:after {
 
 .program-card>h2 {
   color: #617884;
-  font-size: 48px;
+  font-size: 96px;
+  font-weight: 100;
   position: absolute;
   left: 360px;
-  top: 80px;
+  top: 60px;
   font-family: 'amienneregular';
 }
 
-.program-card>.content-wrap>p {
+.program-card>.content-wrap>.btn-para-wrap>p {
   font-family: var(--para-font);
   color:#7F7F7F;
   font-size: 28px;
@@ -810,7 +844,7 @@ pre tt:after {
 .big-btn {
   width: 255px;
   height: 46px;
-  font-size: 27px;
+  font-size: 24px;
 }
 
 .margin-auto {
