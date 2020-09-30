@@ -5,7 +5,11 @@ import Phase from '../components/Phase'
 export default function NutritionAndWellness() {
     return (
         <Layout>
-            <Phase lady="hungry" />
+            <Phase 
+            lady="hungry" 
+            title="Nutrition & Wellness for any phase"
+            fontColor="phase-gray"
+            />
         </Layout>
     )
 }

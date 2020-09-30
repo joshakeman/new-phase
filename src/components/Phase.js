@@ -1,8 +1,9 @@
 import React from 'react'
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import Bullets from '../components/bullets'
 
-export default function Phase({ lady }) {
+export default function Phase({ lady, fontColor, title }) {
     return (
         <StaticQuery
         query={graphql`
@@ -38,14 +39,16 @@ export default function Phase({ lady }) {
           }
         `}
         render={data => {
+            console.log(fontColor)
             return(
                 <>
                 <Img style={{height: '100vh', width: '100vw', position: 'absolute', zIndex: -10}} fluid={data[lady].childImageSharp.fluid} />
+                <Bullets />
                 <div class="phase-wrapper">
                     <div class="phase-content">
                         <div class="phase-copy">
-                            <h2>Your New Phase of Fitness</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisifwcing elit, sed do eiusmod tempor incididunt ut labore et dolore roipi magna aliqua. Ut enim ad minim veeniam, quis nostruklad exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in tufpoy voluptate velit esse cillum dolore eu fugiat nulla parieratur. Excepteur sint.</p>
+                            <h2 class={fontColor}>{title}</h2>
+                            <p class={fontColor}>Lorem ipsum dolor sit amet, consectetur adipisifwcing elit, sed do eiusmod tempor incididunt ut labore et dolore roipi magna aliqua. Ut enim ad minim veeniam, quis nostruklad exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in tufpoy voluptate velit esse cillum dolore eu fugiat nulla parieratur. Excepteur sint.</p>
                             <div class="btn big-btn center">Free Consultation</div>
                         </div>
                         <div class="testimonials">

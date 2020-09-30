@@ -5,7 +5,10 @@ import Phase from '../components/Phase'
 export default function ParenthoodPhase() {
     return (
         <Layout>
-            <Phase lady="pregnant" />
+            <Phase lady="pregnant" 
+            fontColor="phase-gray" 
+            title="Parenthood Phase"
+            />
         </Layout>
     )
 }
