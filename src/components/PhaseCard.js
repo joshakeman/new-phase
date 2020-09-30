@@ -1,6 +1,7 @@
 import React from 'react'
+import { Link } from "gatsby"
 
-export default function PhaseCard({ direction, imgSrc, title, copy}) {
+export default function PhaseCard({ direction, imgSrc, title, copy, path}) {
     return (
         <div class="phase-card">
             <h2>{title}</h2>
@@ -10,14 +11,18 @@ export default function PhaseCard({ direction, imgSrc, title, copy}) {
                     <img src={imgSrc} />
                     <div class="btn-para-wrap">
                         <p>{copy}</p>
-                        <div class="btn margin-auto">Learn More</div>
+                        <div class="btn margin-auto">
+                            <Link to={path} class="link">Learn More</Link> 
+                        </div>
                     </div>
                     </>
                 ) : (
                     <>
                     <div class="btn-para-wrap">
                         <p>{copy}</p>
-                        <div class="btn margin-auto">Learn More</div>
+                        <div class="btn margin-auto">
+                            <Link to={path} class="link">Learn More</Link> 
+                        </div>
                     </div>
                     <img src={imgSrc} />
                     </>

@@ -42,8 +42,10 @@ export default function Phase({ lady, fontColor, title }) {
             console.log(fontColor)
             return(
                 <>
-                <Img style={{height: '100vh', width: '100vw', position: 'absolute', zIndex: -10}} fluid={data[lady].childImageSharp.fluid} />
-                <Bullets />
+                <Img 
+                style={{height: '100vh', width: '100vw', position: 'absolute', zIndex: -10}} 
+                fluid={data[lady].childImageSharp.fluid} />
+                {/* <Bullets /> */}
                 <div class="phase-wrapper">
                     <div class="phase-content">
                         <div class="phase-copy">
