@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import footer from '../images/footer.png'
 
 import Header from "./header"
 import "./layout.css"
@@ -26,11 +27,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div style={{position: 'absolute',
-                  top: 0,
-                  zIndex: -10,
-                  width:'100%'
-                  }}>
+      <div>
         <main>{children}</main>
         {/* <footer>
           <svg class="footer" viewBox="1012.497 0 1949.006 134.001">
@@ -39,6 +36,9 @@ const Layout = ({ children }) => {
           </svg>
         </footer> */}
       </div>
+      <footer>
+        <img className="footer-background" src={footer} />
+      </footer>
     </>
   )
 }

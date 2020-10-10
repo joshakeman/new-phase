@@ -657,12 +657,14 @@ pre tt:after {
 }
 
 .header-wrap {
-  position: relative;
-  height: 76px;
+  position: absolute;
+  width: 100%;
+  padding-top: 10px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 10px 10px 20px 10px;
+  background-color: var(--main-gold);
+  z-index: 20;
 }
 
 .header-wrap>nav{
@@ -963,4 +965,27 @@ pre tt:after {
 .link {
   color: white;
   text-decoration: none;
+}
+
+/* About Me */
+
+.about-me-content {
+  min-height: 600px;
+  padding: 80px 40px 0 40px;
+  display: flex;
+}
+
+.about-col-l {
+  width: 39%;
+}
+
+.about-col-r {
+  width: 59%;
+  padding: 60px 10px;
+}
+
+/* Footer */
+
+.footer-background {
+  margin-bottom: 0;
 }

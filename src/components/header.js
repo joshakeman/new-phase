@@ -9,7 +9,7 @@ const Header = ({ siteTitle }) => (
       <nav>
         <ul>
           <li>Phases</li>
-          <li>About</li>
+          <li><a href="/about-me" class="link">About</a></li>
           <li>Contact</li>
           <li>Blog</li>
         </ul>
