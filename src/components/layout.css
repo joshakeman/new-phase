@@ -706,6 +706,14 @@ pre tt:after {
 }
 
 @media only screen and (max-width: 641px) {
+  .header-wrap {
+    z-index: -10;
+  }
+
+  .header-bar {
+    z-index: -15 !important;
+  }
+
   .header-wrap>nav>ul>li {
     font-size: 1.5rem;
   }
@@ -761,9 +769,26 @@ pre tt:after {
   animation: fade-in 1.5s ease-in;
 }
 
+.mobile-logo {
+  display: none;
+}
+.mobile-logo-wrap {
+  display: none;
+}
+
 @media only screen and (max-width: 641px) {
   .logo {
     display: none;
+  }
+  .mobile-logo {
+    display: block;
+    max-width: 260px;
+    margin: 0 auto;
+    z-index: 10;
+  }
+  .mobile-logo-wrap {
+    display: block;
+    background-color: rgba(243,194,111,0.4);
   }
 }
 
@@ -847,6 +872,7 @@ pre tt:after {
 @media only screen and (max-width: 641px) {
   .bullet-row {
     width: 100%;
+    padding: 0 20px;
   }
   .big-bullet {
     width: 96px;
@@ -927,6 +953,10 @@ pre tt:after {
 }
 
 @media only screen and (max-width: 641px) {
+  .phases-wrapper {
+    padding: 20px;
+  }
+
   .phase-card {
     padding: 10px 0;
     position: relative;
