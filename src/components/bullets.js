@@ -3,7 +3,7 @@ import Bullet from './bullet'
 import { StaticQuery, graphql } from "gatsby"
 
 
-export default function Bullets() {
+export default function Bullets(props) {
     // return (
     //     <div class="bullet-row">
     //         <Bullet bulletText={["Evidence-", <br></br>, "Based"]} />
@@ -63,14 +63,28 @@ export default function Bullets() {
         render={data => {
             console.log(data)
             return(
-                <div class="bullet-row">
-                    <Bullet bulletText={["Individualized", <br></br>, "Training"]} icon={data['dbell'].childImageSharp.fluid}/>
-                    <Bullet bulletText={["Tailored", <br></br>, "Programming"]} icon={data['pencil'].childImageSharp.fluid}/>
-                    <Bullet bulletText={["Personal", <br></br>, "Interests"]} icon={data['tape'].childImageSharp.fluid}/>
-                    <Bullet bulletText={["Evidence-", <br></br>, "Based"]} icon={data['chart'].childImageSharp.fluid}/>
-                    <Bullet bulletText={["Individualized", <br></br>, "Support"]} icon={data['phone'].childImageSharp.fluid} />
-                    <Bullet bulletText={["Nutritional", <br></br>, "Support"]} icon={data['apple'].childImageSharp.fluid} />
+                props.num === 3 
+                ? (
+                <div class="bullet-row bullet-row-top">
+                    <Bullet size="small" bulletText={["Individualized", <br></br>, "Training"]} icon={data['dbell'].childImageSharp.fluid}/>
+                    <Bullet size="small" bulletText={["Tailored", <br></br>, "Programming"]} icon={data['pencil'].childImageSharp.fluid}/>
+                    <Bullet size="small" bulletText={["Personal", <br></br>, "Interests"]} icon={data['tape'].childImageSharp.fluid}/>
                 </div>
+                )
+                : (
+                <>
+                <div class="bullet-row bullet-row-top">
+                    <Bullet size="big" bulletText={["Individualized", <br></br>, "Training"]} icon={data['dbell'].childImageSharp.fluid}/>
+                    <Bullet size="big" bulletText={["Tailored", <br></br>, "Programming"]} icon={data['pencil'].childImageSharp.fluid}/>
+                    <Bullet size="big" bulletText={["Personal", <br></br>, "Interests"]} icon={data['tape'].childImageSharp.fluid}/>
+                </div>
+                <div class="bullet-row">
+                    <Bullet size="big" bulletText={["Evidence-", <br></br>, "Based"]} icon={data['chart'].childImageSharp.fluid}/>
+                    <Bullet size="big" bulletText={["Individualized", <br></br>, "Support"]} icon={data['phone'].childImageSharp.fluid} />
+                    <Bullet size="big" bulletText={["Nutritional", <br></br>, "Support"]} icon={data['apple'].childImageSharp.fluid} />
+                </div>
+                </>
+                )
             )
         }}
       />

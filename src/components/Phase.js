@@ -43,18 +43,31 @@ export default function Phase({ lady, fontColor, title }) {
             return(
                 <>
                 <Img 
-                style={{height: '100vh', width: '100vw', position: 'absolute', zIndex: -10}} 
+                style={{width: '100%', position: 'absolute', zIndex: -10}} 
                 fluid={data[lady].childImageSharp.fluid} />
-                {/* <Bullets /> */}
                 <div class="phase-wrapper">
                     <div class="phase-content">
-                        <div class="phase-copy">
-                            <h2 class={fontColor}>{title}</h2>
-                            <p class={fontColor}>Lorem ipsum dolor sit amet, consectetur adipisifwcing elit, sed do eiusmod tempor incididunt ut labore et dolore roipi magna aliqua. Ut enim ad minim veeniam, quis nostruklad exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in tufpoy voluptate velit esse cillum dolore eu fugiat nulla parieratur. Excepteur sint.</p>
-                            <div class="btn big-btn center">Free Consultation</div>
+                        <div class="phase-row-top">
+                            <div className="phase-bullet-wrap">
+                                <Bullets num={3} />
+                            </div>
                         </div>
-                        <div class="testimonials">
-                            <p>"testimonials rotating: Annie is great" - Brad & Josh</p>
+                        <div class="phase-row-bottom">
+                            <div class="phase-row-bottom-col-l">
+
+                            </div>
+                            <div class="phase-row-bottom-col-r">
+                                <div class="phase-copy">
+                                    <h2 class={fontColor}>{title}</h2>
+                                    <p class={fontColor}>Lorem ipsum dolor sit amet, consectetur adipisifwcing elit, sed do eiusmod tempor incididunt ut labore et dolore roipi magna aliqua. Ut enim ad minim veeniam, quis nostruklad exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in tufpoy voluptate velit esse cillum dolore eu fugiat nulla parieratur. Excepteur sint.</p>
+                                </div>
+                                <div class="button-testimonial-wrap">
+                                    <div class="btn big-btn center">Free Consultation</div>
+                                    <div class="testimonials">
+                                        <p>"testimonials rotating: Annie is great" - Brad & Josh</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>    

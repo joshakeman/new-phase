@@ -14,7 +14,7 @@ const Header = ({ siteTitle }) => (
           <li>Blog</li>
         </ul>
       </nav>
-      <div class="btn big-btn">Free Consultation</div>
+      <div id="nav-consultation-btn" class="btn big-btn">Free Consultation</div>
       <div class="logo">
         <img src={logo} />
         <h4>customized fitness programming for your body & your phase of life</h4>

@@ -14,8 +14,8 @@ const IndexPage = ({ data }) => {
   return(
   <Layout>
     <SEO title="Home" />
-    <Img 
-    // style={{height: '100vh', width: '100vw'}} 
+    <Img
+    className="jumbo-bkg"
     fluid={data.jumbo.childImageSharp.fluid} />
     <div class="main-content">
       <svg class="backbone" viewBox="2627.12 783.198 1379.939 3784.262">
