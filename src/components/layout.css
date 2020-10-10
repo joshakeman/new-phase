@@ -775,7 +775,9 @@ pre tt:after {
 .mobile-logo-wrap {
   display: none;
 }
-
+.mobile-consult-btn {
+  display: none;
+}
 @media only screen and (max-width: 641px) {
   .logo {
     display: none;
@@ -789,6 +791,10 @@ pre tt:after {
   .mobile-logo-wrap {
     display: block;
     background-color: rgba(243,194,111,0.4);
+  }
+  .mobile-consult-btn {
+    display: block;
+    margin: -23px auto 20px auto !important;
   }
 }
 
@@ -870,6 +876,9 @@ pre tt:after {
   text-align: center;
 }
 @media only screen and (max-width: 641px) {
+  .bullet-row-top {
+    margin-top: 0;
+  }
   .bullet-row {
     width: 100%;
     padding: 0 20px;
