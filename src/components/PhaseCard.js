@@ -17,15 +17,15 @@ export default function PhaseCard({ direction, imgSrc, title, copy, path}) {
                     </div>
                     </>
                 ) : (
-                    <>
-                    <div class="btn-para-wrap">
-                        <p>{copy}</p>
-                        <div class="btn margin-auto">
-                            <Link to={path} class="link">Learn More</Link> 
+                    <div class="mobile-flip-order">
+                        <div class="btn-para-wrap">
+                            <p>{copy}</p>
+                            <div class="btn margin-auto">
+                                <Link to={path} class="link">Learn More</Link> 
+                            </div>
                         </div>
-                    </div>
                     <img src={imgSrc} />
-                    </>
+                    </div>
                 )}
             </div>
         </div>

@@ -776,7 +776,7 @@ pre tt:after {
   display: none;
 }
 .mobile-consult-btn {
-  display: none;
+  display: none !important;
 }
 @media only screen and (max-width: 641px) {
   .logo {
@@ -846,7 +846,7 @@ pre tt:after {
   justify-content: space-between;
   align-items: center;
   max-width: 1000px;
-  margin: 0;
+  margin: 0 auto;
 }
 .bullet-row-top {
   margin: -40px auto 0 auto;
@@ -889,6 +889,10 @@ pre tt:after {
   }
   .big-bullet-text {
     font-size: 16px;
+  }
+  .mobile-flip-order {
+    display:flex;
+    flex-direction: column-reverse;
   }
 }
 
