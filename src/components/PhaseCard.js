@@ -5,7 +5,7 @@ export default function PhaseCard({ direction, imgSrc, title, copy, path}) {
     return (
         <div class="phase-card">
             <h2>{title}</h2>
-            <div class="content-wrap">
+            <div class="phase-card-content-wrap">
                 {direction === 'LEFT' ? (
                     <>
                     <img src={imgSrc} class="phase-card-img" />

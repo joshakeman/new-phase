@@ -943,7 +943,7 @@ pre tt:after {
   margin: 0 20px 0 0;
 }
 
-.phase-card>.content-wrap {
+.phase-card-content-wrap {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -965,6 +965,12 @@ pre tt:after {
   font-size: 28px;
 }
 
+.phase-card-mobile-flip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media only screen and (max-width: 641px) {
   .phases-wrapper {
     padding: 20px;
@@ -979,7 +985,7 @@ pre tt:after {
     max-width: 360px;
   }
   
-  .phase-card>.content-wrap {
+  .phase-card-content-wrap {
     flex-direction: column;
   }
   
@@ -995,10 +1001,7 @@ pre tt:after {
   }
 
   .phase-card-mobile-flip {
-    display: flex;
     flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
   }
 }
 
