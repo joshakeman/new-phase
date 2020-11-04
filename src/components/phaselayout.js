@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import footer from '../images/footer.png'
+import logo from '../images/npf_logo.png'
 
 import Header from "./phaseheader"
 import "./layout.css"
@@ -30,6 +31,9 @@ const Layout = ({ children }) => {
       <Header 
     //   siteTitle={data.site.siteMetadata.title} 
       />
+      <div className="mobile-logo-wrap">
+        <img className="mobile-logo" src={logo} />
+      </div>
       <div>
         <main>{children}</main>
         {/* <footer>

@@ -766,7 +766,7 @@ pre tt:after {
   top: 20px;
   z-index: 10;
   opacity: 1;
-  animation: fade-in 1.5s ease-in;
+  animation: logo-fade-in 1.5s ease-in;
 }
 
 .mobile-logo {
@@ -838,6 +838,9 @@ pre tt:after {
 @media only screen and (max-width: 641px) {
   .jumbo-bkg {
     object-fit: cover;
+  }
+  .phase-logo {
+    display: none;
   }
 }
 
@@ -1156,8 +1159,37 @@ pre tt:after {
   padding: 60px 10px;
 }
 
+.mobile-about-me-img {
+  display: none;
+}
+
+@media only screen and (max-width: 641px) {
+  .about-me-content {
+    padding: 10px;
+  }
+  .about-col-l {
+    display:none;
+  }
+  .about-col-r {
+    width: 100%;
+    padding: 10px;
+  }
+  .about-col-r>h1 {
+    text-align: center;
+  }
+  .mobile-about-me-img {
+    display: block;
+  }
+}
+
 /* Footer */
 
 .footer-background {
   margin-bottom: 0;
 }
+
+/* Break Points */
+/*
+  Mobile: 641
+  Desktop: 1168
+*/
