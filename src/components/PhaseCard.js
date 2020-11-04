@@ -8,23 +8,23 @@ export default function PhaseCard({ direction, imgSrc, title, copy, path}) {
             <div class="content-wrap">
                 {direction === 'LEFT' ? (
                     <>
-                    <img src={imgSrc} />
+                    <img src={imgSrc} class="phase-card-img" />
                     <div class="btn-para-wrap">
-                        <p>{copy}</p>
+                        <p class="phase-card-copy">{copy}</p>
                         <div class="btn margin-auto">
                             <Link to={path} class="link">Learn More</Link> 
                         </div>
                     </div>
                     </>
                 ) : (
-                    <div class="mobile-flip-order">
+                    <div class="phase-card-mobile-flip">
                         <div class="btn-para-wrap">
-                            <p>{copy}</p>
+                            <p class="phase-card-copy">{copy}</p>
                             <div class="btn margin-auto">
                                 <Link to={path} class="link">Learn More</Link> 
                             </div>
                         </div>
-                    <img src={imgSrc} />
+                        <img src={imgSrc} class="phase-card-img" />
                     </div>
                 )}
             </div>

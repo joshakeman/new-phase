@@ -938,7 +938,7 @@ pre tt:after {
   position: relative;
 }
 
-.phase-card>.content-wrap>img {
+.phase-card-img {
   max-width: 450px;
   margin: 0 20px 0 0;
 }
@@ -959,7 +959,7 @@ pre tt:after {
   font-family: 'amienneregular';
 }
 
-.phase-card>.content-wrap>.btn-para-wrap>p {
+.phase-card-copy {
   font-family: var(--para-font);
   color:#7F7F7F;
   font-size: 28px;
@@ -975,7 +975,7 @@ pre tt:after {
     position: relative;
   }
   
-  .phase-card>.content-wrap>img {
+  .phase-card-img {
     max-width: 360px;
   }
   
@@ -990,8 +990,15 @@ pre tt:after {
     text-align: center;
   }
 
-  .phase-card>.content-wrap>.btn-para-wrap>p {
+  .phase-card-copy {
     font-size: 20px;
+  }
+
+  .phase-card-mobile-flip {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
   }
 }
 
