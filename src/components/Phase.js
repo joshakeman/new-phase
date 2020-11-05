@@ -42,7 +42,8 @@ export default function Phase({ lady, fontColor, title }) {
             console.log(fontColor)
             return(
                 <>
-                <Img 
+                <Img
+                className="phase-bkg"
                 style={{width: '100%', position: 'absolute', zIndex: -10}} 
                 fluid={data[lady].childImageSharp.fluid} />
                 <div class="phase-wrapper">
