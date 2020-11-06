@@ -1008,6 +1008,20 @@ pre tt:after {
   }
 }
 
+/* Phase Header */ 
+
+.mobile-blog-link {
+  display: none;
+}
+
+@media only screen and (max-width: 641px) {
+  .mobile-blog-link {
+    display: inline-block;
+  }
+  .desktop-blog-link {
+    display: none;
+  }
+}
 /* Buttons */
 
 .btn {
@@ -1114,7 +1128,7 @@ pre tt:after {
     position: relative !important;
   }
   .phase-bullet-wrap {
-    margin: 0 auto;
+    margin: -20px auto 0 auto;
   }
   .phase-row-bottom-col-l {
     display: none;
@@ -1174,6 +1188,15 @@ pre tt:after {
 .link {
   color: white;
   text-decoration: none;
+  z-index: 100;
+}
+
+.link:hover {
+  cursor: pointer;
+}
+
+.header-wrap>nav>ul>li:hover {
+  cursor: pointer;
 }
 
 /* About Me */
