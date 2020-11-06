@@ -8,7 +8,7 @@ const Header = ({ siteTitle }) => (
   <header class="header-wrap">
       <nav>
         <ul>
-          <li>Phases</li>
+          <li><a href="/phases" class="link">Phases</a></li>
           <li><a href="/about-me" class="link">About</a></li>
           <li>Contact</li>
           <li>Blog</li>

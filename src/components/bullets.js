@@ -72,18 +72,18 @@ export default function Bullets(props) {
                 </div>
                 )
                 : (
-                <>
-                <div class="bullet-row bullet-row-top">
-                    <Bullet size="big" bulletText={["Individualized", <br></br>, "Training"]} icon={data['dbell'].childImageSharp.fluid}/>
-                    <Bullet size="big" bulletText={["Tailored", <br></br>, "Programming"]} icon={data['pencil'].childImageSharp.fluid}/>
-                    <Bullet size="big" bulletText={["Personal", <br></br>, "Interests"]} icon={data['tape'].childImageSharp.fluid}/>
+                <div class="homepage-bullets">
+                    <div class="bullet-row bullet-row-top">
+                        <Bullet size="big" bulletText={["Individualized", <br></br>, "Training"]} icon={data['dbell'].childImageSharp.fluid}/>
+                        <Bullet size="big" bulletText={["Tailored", <br></br>, "Programming"]} icon={data['pencil'].childImageSharp.fluid}/>
+                        <Bullet size="big" bulletText={["Personal", <br></br>, "Interests"]} icon={data['tape'].childImageSharp.fluid}/>
+                    </div>
+                    <div class="bullet-row">
+                        <Bullet size="big" bulletText={["Evidence-", <br></br>, "Based"]} icon={data['chart'].childImageSharp.fluid}/>
+                        <Bullet size="big" bulletText={["Individualized", <br></br>, "Support"]} icon={data['phone'].childImageSharp.fluid} />
+                        <Bullet size="big" bulletText={["Nutritional", <br></br>, "Support"]} icon={data['apple'].childImageSharp.fluid} />
+                    </div>
                 </div>
-                <div class="bullet-row">
-                    <Bullet size="big" bulletText={["Evidence-", <br></br>, "Based"]} icon={data['chart'].childImageSharp.fluid}/>
-                    <Bullet size="big" bulletText={["Individualized", <br></br>, "Support"]} icon={data['phone'].childImageSharp.fluid} />
-                    <Bullet size="big" bulletText={["Nutritional", <br></br>, "Support"]} icon={data['apple'].childImageSharp.fluid} />
-                </div>
-                </>
                 )
             )
         }}
