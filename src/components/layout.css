@@ -730,6 +730,11 @@ pre tt:after {
     height: 38px;   
   }
 }
+@media only screen and (max-width: 860px) {
+  #nav-consultation-btn {
+    font-size: 17px;  
+  }
+}
 
 #phase-header>.link {
   font-family: 'festivo_lcbasic';
@@ -824,6 +829,16 @@ pre tt:after {
     margin-top: 2px;
     font-size: 36px;
     max-width: 86%;
+  }
+}
+@media only screen and (max-width: 860px) {
+  .logo {
+    right: 16%;
+  }
+  .logo>h4 {
+    margin: 2px auto;
+    font-size: 28px;
+    width: 100%;
   }
 }
 
