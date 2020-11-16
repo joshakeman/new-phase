@@ -715,8 +715,13 @@ pre tt:after {
     z-index: -15 !important;
   }
 
+  .header-wrap>nav>ul {
+    display: flex;
+    justify-content: center;
+  }
+
   .header-wrap>nav>ul>li {
-    font-size: 1.5rem;
+    font-size: 29px !important;
   }
 
   #nav-consultation-btn {
@@ -1379,6 +1384,8 @@ pre tt:after {
 }
 
 .about-col-l {
+  display: flex;
+  align-items: center;
   width: 39%;
 }
 
