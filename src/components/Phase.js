@@ -8,14 +8,14 @@ export default function Phase({ lady, fontColor, title, copy }) {
         <StaticQuery
         query={graphql`
           query {
-            towel: file(relativePath: { eq: "towel_lady_2466.png" }) {
+            towel: file(relativePath: { eq: "towel_lady_2466_tinted.jpg" }) {
               childImageSharp {
                 fluid(maxWidth: 2000) {
                   ...GatsbyImageSharpFluid
                 }
               }
             },
-            hungry: file(relativePath: { eq: "hungry_lady_2240.png" }) {
+            hungry: file(relativePath: { eq: "hungry_lady_2240_tinted.jpg" }) {
                 childImageSharp {
                     fluid(maxWidth: 2000) {
                     ...GatsbyImageSharpFluid
@@ -29,7 +29,7 @@ export default function Phase({ lady, fontColor, title, copy }) {
                     }
                 }
             },
-            dumbbell: file(relativePath: { eq: "dumbbell_lady_2025.png" }) {
+            dumbbell: file(relativePath: { eq: "dumbbell_lady_2025_tinted.jpg" }) {
                 childImageSharp {
                     fluid(maxWidth: 2000) {
                     ...GatsbyImageSharpFluid
