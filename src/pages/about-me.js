@@ -13,19 +13,18 @@ export default function AboutMe() {
                    <h1>About Me</h1>
                    <img class="mobile-about-me-img" src={annie} />
                    <h4 style={{fontWeight: 100}}>
-                   Lorem ipsum dolor sit amet, consectetur adipisifwcing elit, sed do eiusmod tempor incididunt ut labore et dolore roipi magna aliqua. Ut enim ad minim veeniam, quis nostruklad exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in tufpoy voluptate velit esse cillum dolore eu fugiat nulla parieratur. Excepteur sint.
+                   I am a certified personal trainer, women’s health specialist, pre-post natal fitness specialist, and nutrition coach.
                    </h4>
                    <h4 style={{fontWeight: 100}}>
-                   Lorem ipsum dolor sit amet, consectetur adipisifwcing elit, sed do eiusmod tempor incididunt ut labore et dolore roipi magna aliqua.
+                   My fitness journey began with a love of dance when I was two years old. I went on to major in Dance in college, and taught many classes for varying age groups. 
                    </h4>
                    <h4 style={{fontWeight: 100}}>
-                   Lorem ipsum dolor sit amet, consectetur adipisifwcing elit, sed do eiusmod tempor incididunt ut labore et dolore roipi magna aliqua.
-                   </h4>
-                   <h4 style={{fontWeight: 100}}>
-                   Lorem ipsum dolor sit amet, consectetur adipisifwcing elit, sed do eiusmod tempor incididunt ut labore et dolore roipi magna aliqua.
+                   After giving birth to my son, I began to realize the lack of adequate physical care available to women during these times of physical transition, such as before and after giving birth and the time leading up to and following menopause. Women’s bodies undergo such powerful physical transformations, and I felt this fact was often unrecognized within the fitness industry. Because of this, I felt women were not being given the kind of tailored exercise programming they truly deserved. This thought led me to create New Phase Fitness in the hopes of providing the kind of support that everyone deserves during these pivotal phases.
                    </h4>
                 </div>
             </div>
         </Layout>
     )
 }
+
+

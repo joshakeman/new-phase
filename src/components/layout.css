@@ -999,6 +999,7 @@ pre tt:after {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  min-height: 450px;
 }
 
 .phase-card>h2 {
@@ -1136,8 +1137,9 @@ pre tt:after {
 /* Phase Component */
 
 .phase-wrapper {
-  height: 700px;
-  width: 960px;
+  max-height: 700px;
+  max-width: 960px;
+  padding-top: 66px;
   margin: 0 auto;
   display: flex;
   justify-content: flex-end;
@@ -1200,10 +1202,32 @@ pre tt:after {
   color: #617884 !important;
 }
 
+@media only screen and (max-width: 1168px) {
+  .phase-wrapper {
+    padding-top: 66px;
+  }
+  .phase-copy>h2 {
+    font-size: 62px;
+  }
+  
+  .phase-copy>p {
+
+  }
+
+  .phase-bullet-wrap {
+    max-width: 360px;
+  }
+  .small-bullet {
+    width: 85px;
+    height: 85px;
+  }
+}
+
 @media only screen and (max-width: 648px) {
   .phase-wrapper {
     width: 100%;
     height: 100%;
+    padding: 0 10px;
   }
   .phase-bkg {
     object-fit: cover;
@@ -1254,16 +1278,66 @@ pre tt:after {
   position: absolute;
   bottom: calc(50% - 41px);
   right: 320px;
+  overflow-x: hidden;
 }
 
 .testimonials>p {
   margin-bottom: 0;
   color: #617884;
+
+  /* Starting position */
+  -moz-transform:translateX(100%);
+  -webkit-transform:translateX(100%);
+  transform:translateX(100%);
+  /* Apply animation to this element */
+  -moz-animation: demo-1 15s linear infinite;
+  -webkit-animation: demo-1 15s linear infinite;
+  animation: demo-1 15s linear infinite;
 }
 
 .center {
   margin: 0 auto;
 }
+
+.demo-1 h3 {
+  font-size: 5em;
+  color: #e91e63;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  /* Starting position */
+  -moz-transform:translateX(100%);
+  -webkit-transform:translateX(100%);
+  transform:translateX(100%);
+  /* Apply animation to this element */
+  -moz-animation: demo-1 15s linear infinite;
+  -webkit-animation: demo-1 15s linear infinite;
+  animation: demo-1 15s linear infinite;
+ }
+ /* Move it (define the animation) */
+ @-moz-keyframes demo-1 {
+  0%   { -moz-transform: translateX(100%); }
+  100% { -moz-transform: translateX(-100%); }
+ }
+ @-webkit-keyframes demo-1 {
+  0%   { -webkit-transform: translateX(100%); }
+  100% { -webkit-transform: translateX(-100%); }
+ }
+ @keyframes demo-1 {
+  0%   { 
+  -moz-transform: translateX(100%); /* Firefox bug fix */
+  -webkit-transform: translateX(100%); /* Firefox bug fix */
+  transform: translateX(100%); 
+  }
+  100% { 
+  -moz-transform: translateX(-100%); /* Firefox bug fix */
+  -webkit-transform: translateX(-100%); /* Firefox bug fix */
+  transform: translateX(-100%); 
+  }
+ }
 
 /* General */
 

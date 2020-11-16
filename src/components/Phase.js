@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import Bullets from '../components/bullets'
 
-export default function Phase({ lady, fontColor, title }) {
+export default function Phase({ lady, fontColor, title, copy }) {
     return (
         <StaticQuery
         query={graphql`
@@ -60,7 +60,7 @@ export default function Phase({ lady, fontColor, title }) {
                             <div class="phase-row-bottom-col-r">
                                 <div class="phase-copy">
                                     <h2 class={fontColor}>{title}</h2>
-                                    <p class={fontColor}>Lorem ipsum dolor sit amet, consectetur adipisifwcing elit, sed do eiusmod tempor incididunt ut labore et dolore roipi magna aliqua. Ut enim ad minim veeniam, quis nostruklad exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in tufpoy voluptate velit esse cillum dolore eu fugiat nulla parieratur. Excepteur sint.</p>
+                                    <p class={fontColor}> {copy} </p>
                                 </div>
                                 <div class="button-testimonial-wrap">
                                     <div class="btn big-btn center">Free Consultation</div>
