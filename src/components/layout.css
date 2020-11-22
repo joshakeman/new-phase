@@ -660,11 +660,16 @@ pre tt:after {
   --para-font: Arial, Helvetica, sans-serif;  
 }
 
+.layout-wrap {
+  background-image: url('../images/big_backbone.png');
+  background-repeat-x: no-repeat;
+  background-position: center;
+}
+
 .main-content {
   max-width: 1120px;
   margin: 0 auto;
   position: relative;
-  /* background: url('../images//backbone-thick.jpg') */
 }
 
 @media only screen and (max-width: 648px) {

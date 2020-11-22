@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
       <div className="mobile-logo-wrap">
         <img className="mobile-logo" src={logo} />
       </div>
-      <div>
+      <div className="layout-wrap">
         <main>{children}</main>
         {/* <footer>
           <svg class="footer" viewBox="1012.497 0 1949.006 134.001">
@@ -40,10 +40,10 @@ const Layout = ({ children }) => {
             </path>
           </svg>
         </footer> */}
+        <footer>
+          <img className="footer-background" src={footer} />
+        </footer>
       </div>
-      <footer>
-        <img className="footer-background" src={footer} />
-      </footer>
     </>
   )
 }
