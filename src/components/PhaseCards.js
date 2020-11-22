@@ -39,6 +39,7 @@ export default function PhaseCards() {
                 imgSrc={nutrition}
                 path="/nutrition-and-wellness"
                 direction="RIGHT"
+                bumpLeft={true}
                 />
         </div>
     )

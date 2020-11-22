@@ -1019,7 +1019,7 @@ pre tt:after {
   font-weight: 100;
   position: absolute;
   left: 360px;
-  top: 60px;
+  top: 30px;
   font-family: 'amienneregular';
 }
 
@@ -1139,6 +1139,7 @@ pre tt:after {
   width: 255px;
   height: 46px;
   font-size: 24px;
+  z-index: 100;
 }
 
 .margin-auto {
@@ -1481,6 +1482,11 @@ pre tt:after {
 .amienne {
   font-family: 'amienneregular';
 }
+
+.full-width-btn {
+  width: 100% !important;
+}
+
 /* Break Points */
 /*
   Mobile: 641
