@@ -8,11 +8,11 @@ const Header = () => (
   <header class="header-wrap">
       <nav>
         <ul id="phase-header">
-          <li><a href="/" class="link">Home</a></li>
-          <li><a href="/phases" class="link">Phases</a></li>
-          <li><a href="/about-me" class="link">About</a></li>
-          <li><a href="/" class="link">Contact</a></li>
-          <li><a href="/" class="link mobile-blog-link">Blog</a></li>
+          <li><a href="/" class="np-link">Home</a></li>
+          <li><a href="/phases" class="np-link">Phases</a></li>
+          <li><a href="/about-me" class="np-link">About</a></li>
+          <li><a href="/" class="np-link">Contact</a></li>
+          <li><a href="/" class="np-link mobile-blog-link">Blog</a></li>
         </ul>
       </nav>
       <div class="phase-logo">

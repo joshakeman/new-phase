@@ -13,6 +13,7 @@ import logo from '../images/npf_logo.png'
 
 import Header from "./header"
 import "./layout.css"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

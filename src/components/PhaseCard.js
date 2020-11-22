@@ -53,8 +53,8 @@ export default function PhaseCard({ direction, imgSrc, lady, title, copy, path})
                             fluid={data[lady].childImageSharp.fluid} /> */}
                             <div class="btn-para-wrap">
                                 <p class="phase-card-copy">{copy}</p>
-                                <div class="btn margin-auto">
-                                    <Link to={path} class="link">Learn More</Link> 
+                                <div class="np-btn margin-auto">
+                                    <Link to={path} class="np-link">Learn More</Link> 
                                 </div>
                             </div>
                             </>
@@ -62,8 +62,8 @@ export default function PhaseCard({ direction, imgSrc, lady, title, copy, path})
                             <div class="phase-card-mobile-flip">
                                 <div class="btn-para-wrap">
                                     <p class="phase-card-copy">{copy}</p>
-                                    <div class="btn margin-auto">
-                                        <Link to={path} class="link">Learn More</Link> 
+                                    <div class="np-btn margin-auto">
+                                        <Link to={path} class="np-link">Learn More</Link> 
                                     </div>
                                 </div>
                                 <img src={imgSrc} class="phase-card-img" />

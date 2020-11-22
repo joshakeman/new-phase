@@ -2,19 +2,21 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import logo from '../images/npf_logo.png'
+import ModalButton from './ModalButton'
 
 const Header = ({ siteTitle }) => (
   <>
   <header class="header-wrap">
       <nav>
         <ul>
-          <li><a href="/phases" class="link">Phases</a></li>
-          <li><a href="/about-me" class="link">About</a></li>
+          <li><a href="/phases" class="np-link">Phases</a></li>
+          <li><a href="/about-me" class="np-link">About</a></li>
           <li>Contact</li>
           <li>Blog</li>
         </ul>
       </nav>
-      <div id="nav-consultation-btn" class="btn big-btn">Free Consultation</div>
+      {/* <div id="nav-consultation-btn" class="btn big-btn">Free Consultation</div> */}
+      <ModalButton />
       <div class="logo">
         <img src={logo} />
         <h4>customized fitness programming for your body & your phase of life</h4>

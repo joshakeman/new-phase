@@ -2,6 +2,7 @@ import React from 'react'
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import Bullets from '../components/bullets'
+import ModalButton from '../components/ModalButton'
 
 export default function Phase({ lady, fontColor, title, copy }) {
     return (
@@ -63,7 +64,7 @@ export default function Phase({ lady, fontColor, title, copy }) {
                                     <p class={fontColor}> {copy} </p>
                                 </div>
                                 <div class="button-testimonial-wrap">
-                                    <div class="btn big-btn center">Free Consultation</div>
+                                    <ModalButton />
                                     <div class="testimonials">
                                         <p>"testimonials rotating: Annie is great" - Brad & Josh</p>
                                     </div>

@@ -10,7 +10,7 @@ export default function AboutMe() {
                     <img src={annie} />
                 </div>
                 <div className="about-col-r">
-                   <h1>About Me</h1>
+                   <h1 className="Festivo">About Me</h1>
                    <img class="mobile-about-me-img" src={annie} />
                    <h4 style={{fontWeight: 100}}>
                    I am a certified personal trainer, women’s health specialist, pre-post natal fitness specialist, and nutrition coach.
