@@ -6,6 +6,7 @@ export default function ParenthoodPhase() {
     return (
         <Layout>
             <Phase lady="pregnant" 
+            background="parenthood-bkg"
             fontColor="phase-gray" 
             title="Parenthood Phase"
             copy="The motherhood journey is one of the most high-intensity events a body can go through-

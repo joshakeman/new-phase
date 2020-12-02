@@ -676,12 +676,15 @@ pre tt:after {
   .main-content {
     width: 100%;
   }
+
+  .layout-wrap {
+    background-image: url('../images/small_backbone.jpg');
+  }
 }
 
 .header-wrap {
   position: absolute;
   width: 100%;
-  padding-top: 10px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -772,7 +775,7 @@ pre tt:after {
   overflow: visible;
   width: 100%;
   position: absolute;
-  top: -10px;
+  top: 10px;
   z-index: 10;
 }
 
@@ -959,6 +962,14 @@ pre tt:after {
   }
 }
 
+.contain-bullets {
+  width: 70%;
+}
+
+.dark-gray {
+  color: #3d4f58 !important;
+}
+
 #backbone {
   opacity: 0.47;
   fill: var(--main-gold);
@@ -1142,6 +1153,14 @@ pre tt:after {
   z-index: 100;
 }
 
+@media only screen and (max-width: 648px) {
+  .big-btn {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
 .margin-auto {
   margin: 0 auto;
 }
@@ -1149,9 +1168,7 @@ pre tt:after {
 /* Phase Component */
 
 .phase-wrapper {
-  max-height: 700px;
-  max-width: 960px;
-  padding-top: 66px;
+  padding-top: 96px;
   margin: 0 auto;
   display: flex;
   justify-content: flex-end;
@@ -1159,10 +1176,36 @@ pre tt:after {
   position: relative;
 }
 
+.golden-phase-bkg {
+  background-image: url("../images/dumbbell_lady_2025.png");
+  background-size: cover;
+}
+
+.parenthood-bkg {
+  background-image: url("../images/pregnant_lady_2023.png");
+  background-size: cover;
+}
+
 .phase-content {
   animation: fade-in 1.5s ease-in;
   z-index: 20;
-  margin-right: 0;
+  max-width: 680px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+@media only screen and (max-width: 776px) {
+  .phase-content {
+    width: 100%;
+  }
+  .contain-bullets {
+    width: 100%;
+  }
+  .button-testimonial-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .phase-row-top {
@@ -1184,11 +1227,14 @@ pre tt:after {
 
 .button-testimonial-wrap {
   position: relative;
+  display: flex;
+  justify-content: flex-end;
+  white-space: nowrap;
 }
 
 .phase-bullet-wrap {
-  max-width: 460px;
-  margin: 40px auto;
+  display:flex;
+  justify-content: center;
 }
 
 @keyframes fade-in {
@@ -1208,6 +1254,7 @@ pre tt:after {
   color: #F3C26F;
   font-weight: 100;
   font-family: 'Arial';
+  padding: 20px 0;
 }
 
 .phase-gray {
@@ -1273,7 +1320,7 @@ pre tt:after {
 /* Testimonial Ticker */
 
 .testimonials {
-  width: 540px;
+  width: 420px;
   height: 82px;
   background-color: #F9E2BB;
   border-radius: 85px;
@@ -1289,7 +1336,7 @@ pre tt:after {
   z-index: -10;
   position: absolute;
   bottom: calc(50% - 41px);
-  right: 320px;
+  right: 230px;
   overflow-x: hidden;
 }
 
@@ -1399,7 +1446,11 @@ pre tt:after {
 
 .about-col-r {
   width: 59%;
-  padding: 60px 10px;
+  padding: 60px 60px 0 20px;
+}
+
+.about-col-r>h4 {
+  font-size: 21px;
 }
 
 .mobile-about-me-img {
@@ -1422,6 +1473,8 @@ pre tt:after {
   }
   .mobile-about-me-img {
     display: block;
+    max-width: 340px;
+    margin: 10px auto;
   }
 }
 
@@ -1473,6 +1526,23 @@ pre tt:after {
 
 .speak-with-annie {
   font-size: 66px;
+}
+
+
+@media only screen and (max-width: 748px) {
+  .speak-with-annie {
+    font-size: 51px;
+  }
+  .modal-logo {
+    width: 100px;
+  }
+  .inputs-wrapper {
+    width: 100%;
+  }
+  .nf-modal-header {
+    padding: 0;
+    font-size: 28px;
+  }
 }
 
 .festivo {

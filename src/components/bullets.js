@@ -65,10 +65,10 @@ export default function Bullets(props) {
             return(
                 props.num === 3 
                 ? (
-                <div class="bullet-row bullet-row-top">
-                    <Bullet size="small" bulletText={["Individualized", <br></br>, "Training"]} icon={data['dbell'].childImageSharp.fluid}/>
-                    <Bullet size="small" bulletText={["Tailored", <br></br>, "Programming"]} icon={data['pencil'].childImageSharp.fluid}/>
-                    <Bullet size="small" bulletText={["Personal", <br></br>, "Interests"]} icon={data['tape'].childImageSharp.fluid}/>
+                <div class="bullet-row">
+                    <Bullet size="small" fontColor={props.fontColor} bulletText={["Individualized", <br></br>, "Training"]} icon={data['dbell'].childImageSharp.fluid}/>
+                    <Bullet size="small" fontColor={props.fontColor} bulletText={["Tailored", <br></br>, "Programming"]} icon={data['pencil'].childImageSharp.fluid}/>
+                    <Bullet size="small" fontColor={props.fontColor} bulletText={["Personal", <br></br>, "Interests"]} icon={data['tape'].childImageSharp.fluid}/>
                 </div>
                 )
                 : (

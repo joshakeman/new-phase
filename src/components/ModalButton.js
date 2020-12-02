@@ -13,7 +13,7 @@ function ModalButton(props) {
 
     return (
         <>
-      <div class="np-btn big-btn center" onClick={handleShow}>Free Consultation</div>
+      <div class="np-btn big-btn" onClick={handleShow}>Free Consultation</div>
         <Modal
             show={show}
             onHide={handleClose}

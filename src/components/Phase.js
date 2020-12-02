@@ -3,13 +3,14 @@ import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import Bullets from '../components/bullets'
 import ModalButton from '../components/ModalButton'
+import footer from '../images/footer.png'
 
-export default function Phase({ lady, fontColor, title, copy }) {
+export default function Phase({ lady, background, fontColor, title, copy }) {
     return (
         <StaticQuery
         query={graphql`
           query {
-            towel: file(relativePath: { eq: "towel_lady_2466_tinted.jpg" }) {
+            towel: file(relativePath: { eq: "towel_lady_2466.jpg" }) {
               childImageSharp {
                 fluid(maxWidth: 2000) {
                   ...GatsbyImageSharpFluid
@@ -30,7 +31,7 @@ export default function Phase({ lady, fontColor, title, copy }) {
                     }
                 }
             },
-            dumbbell: file(relativePath: { eq: "dumbbell_lady_2025_tinted.jpg" }) {
+            dumbbell: file(relativePath: { eq: "dumbbell_lady_2025.png" }) {
                 childImageSharp {
                     fluid(maxWidth: 2000) {
                     ...GatsbyImageSharpFluid
@@ -43,36 +44,34 @@ export default function Phase({ lady, fontColor, title, copy }) {
             console.log(fontColor)
             return(
                 <>
-                <Img
+                {/* <Img
                 className="phase-bkg"
                 style={{width: '100%', position: 'absolute', zIndex: -10}} 
-                fluid={data[lady].childImageSharp.fluid} />
-                <div class="phase-wrapper">
+                fluid={data[lady].childImageSharp.fluid} /> */}
+                <div class={`phase-wrapper ${background}`}>
                     <div class="phase-content">
-                        <div class="phase-row-top">
-                            <div className="phase-bullet-wrap">
-                                <Bullets num={3} />
+                        <div className="phase-bullet-wrap">
+                            <div className="contain-bullets">
+                                <Bullets num={3} fontColor="dark-gray"/>
                             </div>
                         </div>
-                        <div class="phase-row-bottom">
-                            <div class="phase-row-bottom-col-l">
-
+                        <div class="">
+                            <div class="phase-copy">
+                                <h2 class={fontColor}>{title}</h2>
+                                <p class={fontColor}> {copy} </p>
                             </div>
-                            <div class="phase-row-bottom-col-r">
-                                <div class="phase-copy">
-                                    <h2 class={fontColor}>{title}</h2>
-                                    <p class={fontColor}> {copy} </p>
-                                </div>
-                                <div class="button-testimonial-wrap">
-                                    <ModalButton />
-                                    <div class="testimonials">
-                                        <p>"testimonials rotating: Annie is great" - Brad & Josh</p>
-                                    </div>
+                            <div class="button-testimonial-wrap">
+                                <ModalButton />
+                                <div class="testimonials">
+                                    <p>"testimonials rotating: Annie is great" - Brad & Josh</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>    
+                <footer>
+                    <img className="footer-background" src={footer} />
+                </footer>
                 </>
             )
         }}

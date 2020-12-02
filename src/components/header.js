@@ -11,7 +11,7 @@ const Header = ({ siteTitle }) => (
         <ul>
           <li><a href="/phases" class="np-link">Phases</a></li>
           <li><a href="/about-me" class="np-link">About</a></li>
-          <li>Contact</li>
+          {/* <li>Contact</li> */}
           <li>Blog</li>
         </ul>
       </nav>
