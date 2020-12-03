@@ -772,7 +772,7 @@ pre tt:after {
   }
 
   .header-nav>ul>li {
-    font-size: 24px !important;
+    font-size: 21px !important;
   }
 
   .phase-header-nav>ul {
@@ -1213,10 +1213,10 @@ pre tt:after {
 
 @media only screen and (max-width: 648px) {
   .big-btn {
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
     padding: 10px;
-    width: 170px;
+    width: 145px;
   }
 }
 
