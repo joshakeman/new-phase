@@ -678,7 +678,7 @@ pre tt:after {
   }
 
   .layout-wrap {
-    background-image: url('../images/small_backbone.jpg');
+    background-image: url('../images/mobile_backbone.png');
   }
 }
 
@@ -690,28 +690,37 @@ pre tt:after {
   align-items: center;
   background-color: var(--main-gold);
   z-index: 20;
+  padding: 10px;
+  min-height: 70px;
 }
 
-.header-wrap>nav{
-  z-index: 10;
+.header-nav{
+  z-index: 100;
   width: 100%;
+  position: absolute;
 }
 
-.header-wrap>nav>ul {
+.header-nav>ul {
   display: flex;
   z-index: 10;
   justify-content: flex-end;
-  margin-right: 15%;
+  margin-right: 28%;
   align-items: flex-end;
   margin-bottom: 0;
 }
 
-.header-wrap>nav>ul>li {
+.header-nav>ul>li {
   font-family: 'festivo_lcbasic';
   font-size: 40px;
   color: white;
   list-style: none;
   margin-right: 20px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .header-nav>ul {
+    margin-right: 35%;
+  }
 }
 
 @media only screen and (max-width: 648px) {
@@ -723,13 +732,19 @@ pre tt:after {
     z-index: -15 !important;
   }
 
-  .header-wrap>nav>ul {
-    display: flex;
-    justify-content: center;
+  .header-nav {
+    padding-top:12px;
   }
 
-  .header-wrap>nav>ul>li {
-    font-size: 29px !important;
+  .header-nav>ul {
+    display: flex;
+    justify-content: center;
+    width: 42%;
+    top: 20px;
+  }
+
+  .header-nav>ul>li {
+    font-size: 24px !important;
   }
 
   #nav-consultation-btn {
@@ -1153,11 +1168,18 @@ pre tt:after {
   z-index: 100;
 }
 
+.header-btn {
+  position: absolute !important;
+  right: 10px;
+  top: 10px;
+}
+
 @media only screen and (max-width: 648px) {
   .big-btn {
     font-size: 16px;
     text-align: center;
     padding: 10px;
+    width: 170px;
   }
 }
 

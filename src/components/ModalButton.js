@@ -4,7 +4,7 @@ import ModalInputs from './ModalInputs'
 
 import npfLogo from '../images/npf_logo.png'
 
-function ModalButton(props) {
+function ModalButton({ isHeader }) {
 
     const [show, setShow] = useState(false);
 
@@ -13,7 +13,7 @@ function ModalButton(props) {
 
     return (
         <>
-      <div class="np-btn big-btn" onClick={handleShow}>Free Consultation</div>
+      <div class={isHeader? "np-btn big-btn header-btn":"np-btn big-btn"} onClick={handleShow}>Free Consultation</div>
         <Modal
             show={show}
             onHide={handleClose}
