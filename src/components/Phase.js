@@ -49,6 +49,9 @@ export default function Phase({ lady, background, fontColor, title, copy }) {
                 style={{width: '100%', position: 'absolute', zIndex: -10}} 
                 fluid={data[lady].childImageSharp.fluid} /> */}
                 <div class={`phase-wrapper ${background}`}>
+                    <div class={`mobile-phase-bkg ${background}`}>
+                        <h1>{title}</h1>
+                    </div>
                     <div class="phase-content">
                         <div className="phase-bullet-wrap">
                             <div className="contain-bullets">

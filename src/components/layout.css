@@ -678,7 +678,7 @@ pre tt:after {
   }
 
   .layout-wrap {
-    background-image: url('../images/mobile_backbone.png');
+    background-image: url('../images/longer_mobile_backbone.png');
   }
 }
 
@@ -778,6 +778,7 @@ pre tt:after {
   .phase-header-nav>ul {
     margin: 0;
     width: 100%;
+    padding-top: 10px;
   }
 
   #nav-consultation-btn {
@@ -1173,6 +1174,7 @@ pre tt:after {
 @media only screen and (max-width: 648px) {
   .mobile-blog-link {
     display: inline-block;
+    font-size: 21px;
   }
   .desktop-blog-link {
     display: none;
@@ -1245,6 +1247,32 @@ pre tt:after {
   background-size: cover;
 }
 
+.nutrition-bkg {
+  background-image: url("../images/hungry_lady_2240.png");
+  background-size: cover;
+}
+.your-new-phase {
+  background-image: url("../images/towel_lady_2466.png");
+  background-size: cover;
+}
+
+@media only screen and (max-width: 648px) {
+  .phase-wrapper.golden-phase-bkg {
+    background-image: none;
+  }
+  
+  .phase-wrapper.parenthood-bkg {
+    background-image: none;
+  }
+  
+  .phase-wrapper.nutrition-bkg {
+    background-image: none;
+  }
+  .phase-wrapper.your-new-phase {
+    background-image: none;
+  }
+}
+
 .phase-content {
   animation: fade-in 1.5s ease-in;
   z-index: 20;
@@ -1252,6 +1280,24 @@ pre tt:after {
   padding: 40px 20px;
   margin: 0 auto;
   min-height: 100vh;
+}
+
+.mobile-phase-bkg {
+  width:100%;
+  height:300px;
+  display: none;
+}
+
+@media only screen and (max-width: 648px) {
+  .mobile-phase-bkg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile-phase-bkg>h1 {
+    font-family: 'amienneregular';
+    color: #617884;
+  }
 }
 
 @media only screen and (max-width: 776px) {
@@ -1264,6 +1310,10 @@ pre tt:after {
   .button-testimonial-wrap {
     flex-direction: column;
     align-items: center;
+  }
+  .button-testimonial-wrap>.big-btn {
+    font-size: 24px;
+    width: 70%;
   }
 }
 
@@ -1345,7 +1395,8 @@ pre tt:after {
   .phase-wrapper {
     width: 100%;
     height: 100%;
-    padding: 0 10px;
+    padding: 0;
+    display: block;
   }
   .phase-bkg {
     object-fit: cover;
