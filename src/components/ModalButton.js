@@ -47,6 +47,7 @@ function ModalButton({ isHeader }) {
                 </Modal.Footer> */}
                 {/* <div class="np-btn" onClick={handleClose}>Close</div> */}
                 <div className="modal-foot">
+                  <p onClick={handleClose} className="close-btn">close</p>
                 </div>
                 <img src={npfLogo} className="modal-logo" />
             </div>

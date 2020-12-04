@@ -678,7 +678,7 @@ pre tt:after {
   }
 
   .layout-wrap {
-    background-image: url('../images/longer_mobile_backbone.png');
+    background-image: url('../images/longer_mobile_backbone.jpg');
   }
 }
 
@@ -732,6 +732,10 @@ pre tt:after {
 @media only screen and (max-width: 1100px) {
   .header-nav>ul {
     margin-right: 35%;
+  }
+  .header-btn {
+    width: 225px;
+    font-size: 21px;
   }
 }
 
@@ -1213,6 +1217,20 @@ pre tt:after {
   z-index: 200;
 }
 
+@media only screen and (max-width: 1100px) {
+  .header-btn {
+    width: 225px;
+    font-size: 21px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .header-btn {
+    width: 165px;
+    font-size: 18px;
+  }
+}
+
 @media only screen and (max-width: 648px) {
   .big-btn {
     font-size: 14px;
@@ -1417,14 +1435,13 @@ pre tt:after {
   }
   .testimonials {
     width: 100% !important;
-    height: 82px;
+    height: 54px;
     margin: 10px auto;
     z-index: 0;
     position: relative !important;
     padding: 10px;
     right: 0 !important;
   }
-    
 }
 
 /* Testimonial Ticker */
@@ -1610,6 +1627,17 @@ pre tt:after {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 10px;
+}
+
+.modal-foot>p {
+  color: white;
+}
+
+.close-btn:hover {
+  cursor:pointer;
 }
 
 .modal-content-wrap {
