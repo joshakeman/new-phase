@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/phaselayout'
-import annie from '../images/annie-headshot.png'
+import annie from '../images/annie-headshot.jpg'
 
 export default function AboutMe() {
     return (
