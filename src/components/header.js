@@ -18,7 +18,7 @@ const Header = ({ siteTitle }) => (
     <ul>
       <li><a href="/phases" class="np-link">Phases</a></li>
       <li><a href="/about-me" class="np-link">About</a></li>
-      <li>Blog</li>
+      <li><a href="/blog" class="np-link">Blog</a></li>
     </ul>
   </nav>
   <svg class="header-bar" viewBox="357 0 1920 109.602">

@@ -50,7 +50,7 @@ export default function Phase({ lady, background, fontColor, title, copy }) {
                 fluid={data[lady].childImageSharp.fluid} /> */}
                 <div class={`phase-wrapper ${background}`}>
                     <div class={`mobile-phase-bkg ${background}`}>
-                        <h1>{title}</h1>
+                        <h1 class="mobile-jumbo-title">{title}</h1>
                     </div>
                     <div class="phase-content">
                         <div className="phase-bullet-wrap">

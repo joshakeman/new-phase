@@ -743,12 +743,15 @@ pre tt:after {
   .phase-header-nav>ul>li {
     font-size: 28px;
   }
+  .desktop-blog-link {
+    font-size: 28px !important;
+  }
   .mobile-blog-link {
     font-size: 28px;
   }
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 716px) {
   .spacer {
     display: block;
     width: 40px;
@@ -776,6 +779,10 @@ pre tt:after {
   }
 
   .header-nav>ul>li {
+    font-size: 21px !important;
+  }
+
+  .item {
     font-size: 21px !important;
   }
 
@@ -825,6 +832,13 @@ pre tt:after {
 
 #phase-header {
   margin-right: 8%;
+  padding: 10px;
+}
+
+@media only screen and (min-width: 960px) {
+  #phase-header {
+    padding: 0;
+  }
 }
 
 .header-bar {
@@ -1314,7 +1328,7 @@ pre tt:after {
   }
   .mobile-phase-bkg>h1 {
     font-family: 'amienneregular';
-    color: #617884;
+    color: var(--main-gold);
   }
 }
 
@@ -1695,6 +1709,14 @@ pre tt:after {
   width: 100% !important;
 }
 
+/* Blog */
+
+.blog-content {
+  padding-top: 160px;
+}
+.blog-content>h1 {
+  text-align: center;
+}
 /* Break Points */
 /*
   Mobile: 641

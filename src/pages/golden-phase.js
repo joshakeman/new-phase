@@ -9,7 +9,7 @@ export default function GoldenPhase() {
             lady="dumbbell" 
             background="golden-phase-bkg"
             title="Golden Phase"
-            fontColor="dark-gray"
+            fontColor="phase-gray" 
             copy="As your body changes, you will need to adapt your fitness regime to meet the needs of your
             new phase of life.
             An exercise program that is designed to be proprioceptively challenging is proven to be more

@@ -9,7 +9,7 @@ const Header = () => (
       <div class="phase-logo">
         <img src={logo} />
       </div>
-      <li class="item desktop-blog-link">Blog</li>
+      <li class="item desktop-blog-link"><a href="/blog" class="np-link">Blog</a></li>
   </header>
   <nav className="header-nav phase-header-nav">
     <ul id="phase-header">
@@ -18,7 +18,10 @@ const Header = () => (
       <span className="spacer"></span>
       <li><a href="/about-me" class="np-link">About</a></li>
       {/* <li><a href="/" class="np-link">Contact</a></li> */}
-      <li><a href="/" class="np-link mobile-blog-link">Blog</a></li>
+      <li>
+        <a href="/blog" class="np-link mobile-blog-link">Blog</a>
+        {/* <a href="/blog" class="np-link">Blog</a> */}
+      </li>
     </ul>
   </nav>
   <svg class="header-bar" viewBox="357 0 1920 109.602">
