@@ -5,7 +5,7 @@ import logo from '../images/npf_logo.png'
 
 const Header = () => (
   <>
-  <header class="header-wrap">
+  <header class="phase-header-wrap">
       <div class="phase-logo">
         <img src={logo} />
       </div>
