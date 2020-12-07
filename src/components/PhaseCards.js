@@ -10,7 +10,8 @@ export default function PhaseCards() {
         <div class="phases-wrapper">
             <PhaseCard 
                 title="Your New Phase Fitness"
-                copy="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est eopksio laborum. Sed ut perspiciatis unde omnis istpoe natus error sit voluptatem accusantium"
+                copy="A woman’s body undergoes many powerful physical transformations. I believe women deserve
+                more than a “one-size-fits all” approach to their physical health."
                 lady="punch"
                 imgSrc={punch}
                 path="/your-new-phase"
@@ -18,7 +19,8 @@ export default function PhaseCards() {
                 />
             <PhaseCard 
                 title="Parenthood Phase"
-                copy="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est eopksio laborum. Sed ut perspiciatis unde omnis istpoe natus error sit voluptatem accusantium"
+                copy="The motherhood journey is one of the most high-intensity events a body can go through. I believe the physical demands of
+                giving birth deserves more than a “one-size fits all” approach to exercise."
                 lady="lunge"
                 imgSrc={lunge}
                 path="/parenthood-phase"
@@ -26,7 +28,7 @@ export default function PhaseCards() {
                 />
             <PhaseCard 
                 title="Golden Phase"
-                copy="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est eopksio laborum. Sed ut perspiciatis unde omnis istpoe natus error sit voluptatem accusantium"
+                copy="As your body changes, you will need to adapt your fitness regime to meet the needs of your new phase of life. Exercise that is proprioceptively challenging is proven to be better for women as they age."
                 lady="silverFox"
                 imgSrc={silverFox}
                 path="/golden-phase"
@@ -34,7 +36,7 @@ export default function PhaseCards() {
                 />
             <PhaseCard 
                 title="Nutrition & Wellness"
-                copy="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est eopksio laborum. Sed ut perspiciatis unde omnis istpoe natus error sit voluptatem accusantium"
+                copy="Whether your goal is to lose weight, gain muscle, or simply get healthier I can provide the education and support you need."
                 lady="nutrition"
                 imgSrc={nutrition}
                 path="/nutrition-and-wellness"

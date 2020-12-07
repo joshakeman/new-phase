@@ -66,13 +66,13 @@ export default function Phase({ lady, background, fontColor, title, copy }) {
                             <div class="button-testimonial-wrap">
                                 <ModalButton />
                                 <div class="testimonials">
-                                    <p>"testimonials rotating: Annie is great" - Brad & Josh</p>
+                                    <p>Annie is a fabulous trainer. She tailors individual routines to meet specific goals. It's also great to work with her because I can use simple equipment at home rather than going to the gym. I highly recommend her. --Neeley Gossett  .......   Working with Annie has been a pleasure. I initially sought help for chronic low back tightness and a loss of core and muscle strength. At sixty five I realized going forward was going to require something more than my daily hikes! Also, a diagnosis of osteoporosis was a concern. Annie carefully took my health history and listened respectfully to my needs. She prepared several excellent workout routines tailor made just for me, and made sure I understood correct alignment. She also uses a training app that has been extremely helpful to visually demonstrate and remind me of each exercise. Together we have steadily made consistent progress and I continue to get stronger and feel better each day. Thank you for the friendly and supportive atmosphere you create and I hope to continue for years to come. -Margaret H.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>    
-                <footer>
+                <footer className="phase-footer">
                     <img className="footer-background" src={footer} />
                 </footer>
                 </>
