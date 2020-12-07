@@ -1473,6 +1473,9 @@ pre tt:after {
   .button-testimonial-wrap {
     position: relative;
   }
+  .phase-footer {
+    bottom: inherit;
+  }
   .testimonials {
     width: 100% !important;
     height: 54px;
