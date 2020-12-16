@@ -55,7 +55,7 @@ export default function Phase({ lady, background, fontColor, title, copy }) {
                     <div class="phase-content">
                         <div className="phase-bullet-wrap">
                             <div className="contain-bullets">
-                                <Bullets num={3} fontColor="dark-gray"/>
+                                <Bullets num={3} fontColor={fontColor}/>
                             </div>
                         </div>
                         <div class="">

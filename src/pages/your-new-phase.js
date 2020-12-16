@@ -6,7 +6,8 @@ export default function YourNewPhase() {
     return (
         <Layout>
             <Phase 
-            lady="towel" 
+            lady="towel"
+            bulletTextColor="phase-gold" 
             background="your-new-phase"
             title="Your New Phase of Fitness"
             fontColor="gold-then-phase-gray" 

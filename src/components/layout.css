@@ -1295,7 +1295,7 @@ pre tt:after {
   background-size: cover;
 }
 .your-new-phase {
-  background-image: url("../images/towel_lady_2466.jpg");
+  background-image: url("../images/towel_lady_2466_extended.jpg");
   background-size: cover;
 }
 
@@ -1385,6 +1385,7 @@ pre tt:after {
   display: flex;
   justify-content: flex-end;
   white-space: nowrap;
+  z-index: 10;
 }
 
 .phase-bullet-wrap {
@@ -1397,8 +1398,17 @@ pre tt:after {
   100% {opacity: 1;}
 }
 
+.phase-copy {
+  background-color: #fecc66;
+  border: 10px solid #fae3ba;
+  border-radius: 85px;
+  padding: 20px;
+  /* border-right: 6px solid #fae3ba;
+  border-left: 6px solid #fae3ba; */
+}
+
 .phase-copy>h2 {
-  color: #F3C26F;
+  color: #617884;
   font-size: 72px;
   font-weight: 100;
   font-family: 'amienneregular';
@@ -1406,7 +1416,7 @@ pre tt:after {
 }
 
 .phase-copy>p {
-  color: #F3C26F;
+  color: #617884;
   font-weight: 100;
   font-family: 'Arial';
   padding: 20px 0;
@@ -1728,6 +1738,10 @@ pre tt:after {
 }
 .blog-content>h1 {
   text-align: center;
+}
+
+.phase-gold {
+  color: var(--main-gold);
 }
 /* Break Points */
 /*

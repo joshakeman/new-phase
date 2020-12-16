@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import logo from '../images/npf_logo.png'
+import logo from '../images/logo_w_words2.png'
 import ModalButton from './ModalButton'
 
 const Header = ({ siteTitle }) => (
@@ -10,7 +10,7 @@ const Header = ({ siteTitle }) => (
       {/* <div id="nav-consultation-btn" class="btn big-btn">Free Consultation</div> */}
       <div class="logo">
         <img src={logo} />
-        <h4>customized fitness programming for your body & your phase of life</h4>
+        {/* <h4>customized fitness programming for your body & your phase of life</h4> */}
       </div>
   </header>
   <ModalButton isHeader={true} />
