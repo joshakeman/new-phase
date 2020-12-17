@@ -1,13 +1,19 @@
 import React from 'react'
+import { graphql } from "gatsby"
 import Layout from '../components/phaselayout'
-import annie from '../images/annie-headshot.jpg'
+import annie from '../images/annie-headshot.png'
+import Img from "gatsby-image"
 
-export default function AboutMe() {
+export default function AboutMe({ data }) {
+    console.log(data.annie.childImageSharp.fluid)
     return (
         <Layout>
             <div className="main-content about-me-content">
                 <div className="about-col-l">
                     <img src={annie} />
+                    {/* <Img
+                    // className="jumbo-bkg"
+                    fluid={data.annie.childImageSharp.fluid} /> */}
                 </div>
                 <div className="about-col-r">
                    <h1 className="Festivo">About Me</h1>
@@ -46,4 +52,14 @@ export default function AboutMe() {
     )
 }
 
-
+export const query = graphql`
+  query {
+    annie: file(relativePath: { eq: "annie-headshot.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

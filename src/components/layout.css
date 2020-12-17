@@ -1597,8 +1597,11 @@ pre tt:after {
 
 .about-me-content {
   min-height: 600px;
-  padding: 80px 40px 0 40px;
+  padding: 80px 40px 20px 40px;
   display: flex;
+  background-image: url('../images/big_backbone.png');
+  background-repeat-x: no-repeat;
+  background-position: center;
 }
 
 .about-col-l {
@@ -1621,6 +1624,11 @@ pre tt:after {
 }
 
 @media only screen and (max-width: 648px) {
+  .about-me-content {
+    background-image: url('../images/longer_mobile_backbone.jpg');
+    background-repeat-x: no-repeat;
+    background-position: center;
+  }
   .about-me-content {
     padding: 10px;
   }
