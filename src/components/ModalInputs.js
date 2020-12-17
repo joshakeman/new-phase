@@ -40,7 +40,7 @@ const ModalInputs = ({ handleClose }) => {
             />
         </InputGroup>
 
-        <div type="submit" class="np-btn full-width-btn" onClick={handleClose}>Submit</div>
+        <button type="submit" class="np-btn full-width-btn" onClick={handleClose}>Submit</button>
     </form>
   );
 };
