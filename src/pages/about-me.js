@@ -27,6 +27,19 @@ export default function AboutMe() {
                    <h4 style={{fontWeight: 100}}>
                    Because of this, I felt women were not being given the kind of tailored exercise programming they truly deserved. This thought led me to create New Phase Fitness in the hopes of providing the kind of support that everyone deserves during these pivotal phases.
                    </h4>
+                   <br></br>
+                   <div className="qualifications">
+                    <h6>B.A. in Dance from Franklin & Marshall College</h6>
+
+                    <h6>Certified Personal Trainer, National Academy of Sports Medicine, NCCA accredited</h6>
+
+                    <h6>Certified Nutrition Coach, National Academy of Sports Medicine</h6>
+
+                    <h6>Certified Women's Health Specialist, National Academy of Sports Medicine</h6>
+
+                    <h6>Pre/Postnatal Performance Training Specialist, ProNatal Fitness</h6>
+
+                   </div>
                 </div>
             </div>
         </Layout>

@@ -9,9 +9,8 @@ export default function PhaseCards() {
     return (
         <div class="phases-wrapper">
             <PhaseCard 
-                title="Your New Phase Fitness"
-                copy="A woman’s body undergoes many powerful physical transformations. I believe women deserve
-                more than a “one-size-fits all” approach to their physical health."
+                title="Your New Phase of Fitness"
+                copy="A woman’s body undergoes powerful physical transformations depending on phase of life. From adolescence to parenthood to menopause, women deserve more than a “one-size-fits all” approach to their health and wellness."
                 lady="punch"
                 imgSrc={punch}
                 path="/your-new-phase"
@@ -19,8 +18,8 @@ export default function PhaseCards() {
                 />
             <PhaseCard 
                 title="Parenthood Phase"
-                copy="The motherhood journey is one of the most high-intensity events a body can go through. I believe the physical demands of
-                giving birth deserves more than a “one-size fits all” approach to exercise."
+                copy="The motherhood journey is one of the most high-intensity athletic events of a lifetime.
+                The physical demands of giving birth plus the stresses of new parenthood requires specialized fitness programming delivered with attention and care."
                 lady="lunge"
                 imgSrc={lunge}
                 path="/parenthood-phase"
@@ -28,7 +27,7 @@ export default function PhaseCards() {
                 />
             <PhaseCard 
                 title="Golden Phase"
-                copy="As your body changes, you will need to adapt your fitness regime to meet the needs of your new phase of life. Exercise that is proprioceptively challenging is proven to be better for women as they age."
+                copy="As your body changes, you will benefit from adapting your fitness regime to meet the needs of this new phase. Proprioceptively challenging exercise is proven to be beneficial during this time of life."
                 lady="silverFox"
                 imgSrc={silverFox}
                 path="/golden-phase"

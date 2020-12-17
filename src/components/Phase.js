@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 import Bullets from '../components/bullets'
 import ModalButton from '../components/ModalButton'
 import footer from '../images/footer.png'
+import footerLogo from '../images/footer_icon.png'
 
 export default function Phase({ lady, background, fontColor, title, copy }) {
     return (
@@ -72,9 +73,9 @@ export default function Phase({ lady, background, fontColor, title, copy }) {
                         </div>
                     </div>
                 </div>    
-                <footer className="phase-footer">
+                {/* <footer className="phase-footer">
                     <img className="footer-background" src={footer} />
-                </footer>
+                </footer> */}
                 </>
             )
         }}

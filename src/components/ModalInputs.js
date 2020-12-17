@@ -6,7 +6,7 @@ import emailIcon from '../images/email-24px.svg'
 
 const ModalInputs = ({ handleClose }) => {
   return (
-    <div className="inputs-wrapper">
+    <form className="inputs-wrapper" method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
         <InputGroup className="mb-3">
             <InputGroup.Prepend>
             <InputGroup.Text id="basic-addon1"><img src={personIcon} style={{marginBottom:0}} /></InputGroup.Text>
@@ -41,7 +41,7 @@ const ModalInputs = ({ handleClose }) => {
         </InputGroup>
 
         <div class="np-btn full-width-btn" onClick={handleClose}>Submit</div>
-    </div>
+    </form>
   );
 };
 
