@@ -1086,6 +1086,7 @@ pre tt:after {
 
 .phases-wrapper {
   margin: 20px 0;
+  padding-top: 70px;
 }
 
 .phase-card {
