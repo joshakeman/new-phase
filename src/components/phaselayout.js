@@ -39,6 +39,9 @@ const Layout = ({ children }) => {
         {/* <footer>
           <img className="footer-background" src={footer} />
         </footer> */}
+        <footer>
+          <img className="footer-background" src={footer} />
+        </footer>
       </div>
     </>
   )

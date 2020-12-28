@@ -666,6 +666,12 @@ pre tt:after {
   background-position: center;
 }
 
+.phaselayout-wrap {
+  background-image: url('../images/big_backbone.png');
+  background-repeat-x: no-repeat;
+  background-position: center;
+}
+
 .main-content {
   max-width: 1120px;
   margin: 0 auto;
@@ -678,6 +684,10 @@ pre tt:after {
   }
 
   .layout-wrap {
+    background-image: url('../images/longer_mobile_backbone.jpg');
+  }
+
+  .phaselayout-wrap {
     background-image: url('../images/longer_mobile_backbone.jpg');
   }
 }
