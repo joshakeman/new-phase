@@ -7,6 +7,7 @@ import emailIcon from '../images/email-24px.svg'
 const ModalInputs = ({ handleClose }) => {
   return (
     <form netlify className="inputs-wrapper" method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
+      <input type="hidden" name="form-name" value="contact" />
         <InputGroup className="mb-3">
             <InputGroup.Prepend>
             <InputGroup.Text id="basic-addon1"><img src={personIcon} style={{marginBottom:0}} /></InputGroup.Text>
@@ -17,7 +18,6 @@ const ModalInputs = ({ handleClose }) => {
             aria-describedby="basic-addon1"
             />
         </InputGroup>
-      
         <InputGroup className="mb-3">
             <InputGroup.Prepend>
             <InputGroup.Text id="basic-addon1"><img src={personIcon} style={{marginBottom:0}} /></InputGroup.Text>
@@ -28,7 +28,6 @@ const ModalInputs = ({ handleClose }) => {
             aria-describedby="basic-addon1"
             />
         </InputGroup>
-
         <InputGroup className="mb-3">
             <InputGroup.Prepend>
             <InputGroup.Text id="basic-addon1"><img src={emailIcon} style={{marginBottom:0}} /></InputGroup.Text>
