@@ -1722,6 +1722,18 @@ pre tt:after {
   width: 50%;
 }
 
+.inputs-wrapper>p {
+  width: 100%;
+  margin: 0;
+
+}
+.inputs-wrapper>p>label {
+  width: 100%;
+}
+.inputs-wrapper>p>label>input {
+  width: 100%;
+  margin: 0;
+}
 .speak-with-annie {
   font-size: 66px;
 }
