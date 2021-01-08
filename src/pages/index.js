@@ -9,6 +9,7 @@ import SEO from "../components/seo"
 
 import Bullets from '../components/bullets'
 import PhaseCards from '../components/PhaseCards'
+import HiddenForm from '../components/hiddenForm'
 
 const IndexPage = ({ data }) => {
   console.log(data)
@@ -30,6 +31,8 @@ const IndexPage = ({ data }) => {
       <Bullets />
       <PhaseCards />
     </div>
+    
+    <HiddenForm />
   </Layout>
   )
 }

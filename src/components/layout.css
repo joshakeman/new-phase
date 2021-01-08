@@ -1725,7 +1725,6 @@ pre tt:after {
 .inputs-wrapper>p {
   width: 100%;
   margin: 0;
-
 }
 .inputs-wrapper>p>label {
   width: 100%;
@@ -1784,3 +1783,7 @@ pre tt:after {
   Mobile: 641
   Desktop: 1168
 */
+
+.hidden {
+  display: none;
+}
