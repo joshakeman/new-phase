@@ -16,7 +16,7 @@ const Header = ({ siteTitle }) => (
   <ModalButton isHeader={true} />
   <nav className="header-nav">
     <ul>
-      <li><a href="/phases" class="np-link">Phases</a></li>
+      <li><a href="/contact" class="np-link">Contact</a></li>
       <li><a href="/about-me" class="np-link">About</a></li>
       <li><a href="/blog" class="np-link">Blog</a></li>
     </ul>

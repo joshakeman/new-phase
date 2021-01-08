@@ -670,6 +670,7 @@ pre tt:after {
   background-image: url('../images/big_backbone.png');
   background-repeat: no-repeat;
   background-position: center;
+  min-height: 100vh;
 }
 
 .main-content {
@@ -868,6 +869,14 @@ pre tt:after {
   position: absolute;
   top: 10px;
   z-index: 10;
+}
+
+.phase-header-bar {
+  overflow: visible;
+  width: 100%;
+  position: absolute;
+  top: 10px;
+  z-index: -100;
 }
 
 #header-bar {
@@ -1772,6 +1781,15 @@ pre tt:after {
   padding-top: 160px;
 }
 .blog-content>h1 {
+  text-align: center;
+}
+
+/* Contact */
+
+.contact-wrap {
+  padding-top: 160px;
+}
+.contact-wrap>h1 {
   text-align: center;
 }
 
