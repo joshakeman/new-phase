@@ -81,7 +81,7 @@ export default function ModalInputs() {
         name="contact"
         method="post"
         className="inputs-wrapper"
-        action="/thanks/"
+        action="/"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         onSubmit={handleSubmit}
