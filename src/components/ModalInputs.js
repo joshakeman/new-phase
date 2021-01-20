@@ -70,7 +70,8 @@ export default function ModalInputs() {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
         'form-name': form.getAttribute('name'),
-        ...state,
+        name: `${state.firstName} ${state.lastName}`,
+        email: state.email
       }),
     })
       .then(() => navigate(form.getAttribute('action')))
@@ -98,14 +99,14 @@ export default function ModalInputs() {
           <label>
             First name:
             <br />
-            <input className="mb-3" type="text" name="first-name" onChange={handleChange} />
+            <input className="mb-3" type="text" name="firstName" onChange={handleChange} />
           </label>
         </p>
         <p>
           <label>
             Last name:
             <br />
-            <input className="mb-3" type="text" name="last-name" onChange={handleChange} />
+            <input className="mb-3" type="text" name="lastName" onChange={handleChange} />
           </label>
         </p>
         <p>
