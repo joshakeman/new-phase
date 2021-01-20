@@ -73,18 +73,16 @@ export default function ModalInputs() {
         ...state,
       }),
     })
-      // .then(() => navigate(form.getAttribute('action')))
-      .then(() => setSubmit(true))
+      .then(() => navigate(form.getAttribute('action')))
       .catch((error) => alert(error))
   }
 
   return (
-    setSubmit ? (
       <form
         name="contact"
         method="post"
         className="inputs-wrapper"
-        action="/"
+        action="/thank-you"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         onSubmit={handleSubmit}
@@ -100,14 +98,14 @@ export default function ModalInputs() {
           <label>
             First name:
             <br />
-            <input className="mb-3" type="text" name="name" onChange={handleChange} />
+            <input className="mb-3" type="text" name="first-name" onChange={handleChange} />
           </label>
         </p>
         <p>
           <label>
             Last name:
             <br />
-            <input className="mb-3" type="text" name="name" onChange={handleChange} />
+            <input className="mb-3" type="text" name="last-name" onChange={handleChange} />
           </label>
         </p>
         <p>
@@ -121,8 +119,5 @@ export default function ModalInputs() {
           <button type="submit" class="np-btn full-width-btn">Submit</button>
         </p>
       </form>
-    ) : (
-      <h2>Thank you, I'll be in touch soon to schedule our consultation!</h2>
-    )
   )
 }

@@ -7,12 +7,11 @@ import npfLogo from '../images/npf_logo.png'
 function ModalButton({ isHeader }) {
 
     const [show, setShow] = useState(false);
-
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
     return (
-        <>
+    <>
       <div class={isHeader? "np-btn big-btn header-btn":"np-btn big-btn"} onClick={handleShow}>Free Consultation</div>
         <Modal
             show={show}
@@ -39,7 +38,9 @@ function ModalButton({ isHeader }) {
                 About Getting Started
                 </h2>
                 
-                <ModalInputs handleClose={handleClose}/>
+                <ModalInputs 
+                  handleClose={handleClose}
+                  />
 
                 </Modal.Body>
                 {/* <Modal.Footer>
