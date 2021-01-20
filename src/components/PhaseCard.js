@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-export default function PhaseCard({ direction, imgSrc, lady, title, copy, path, bumpLeft}) {
+export default function PhaseCard({ direction, imgSrc, bumpUp, title, copy, path, bumpLeft}) {
 
     return (
         <StaticQuery
@@ -44,7 +44,7 @@ export default function PhaseCard({ direction, imgSrc, lady, title, copy, path, 
             return(
                 <div class="phase-card">
                     <h2
-                    style={ bumpLeft ? {left: 300} : {left: 360}}
+                    style={ bumpLeft ? {left: 300, top: 15} : {left: 360, top: -15}}
                     >{title}</h2>
                     <div class="phase-card-content-wrap">
                         {direction === 'LEFT' ? (

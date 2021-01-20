@@ -56,6 +56,7 @@ function encode(data) {
 
 export default function ModalInputs() {
   const [state, setState] = React.useState({})
+  const [didSubmit, setSubmit] = React.useState(false)
 
   const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value })
@@ -72,11 +73,13 @@ export default function ModalInputs() {
         ...state,
       }),
     })
-      .then(() => navigate(form.getAttribute('action')))
+      // .then(() => navigate(form.getAttribute('action')))
+      .then(() => setSubmit(true))
       .catch((error) => alert(error))
   }
 
   return (
+    setSubmit ? (
       <form
         name="contact"
         method="post"
@@ -118,5 +121,8 @@ export default function ModalInputs() {
           <button type="submit" class="np-btn full-width-btn">Submit</button>
         </p>
       </form>
+    ) : (
+      <h2>Thank you, I'll be in touch soon to schedule our consultation!</h2>
+    )
   )
 }
