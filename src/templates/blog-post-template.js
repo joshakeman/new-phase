@@ -80,6 +80,7 @@ const BlogPost = props => {
   return (
     <Layout>
       {errors && <SEO title='GraphQL Error' />}
+      <h1 className="amienne blog-header">New Phase Blog</h1>
       {post && <SEO title={post.title || 'Untitled'} description={toPlainText(post._rawExcerpt)} image={post.mainImage} />}
 
       {errors && (
