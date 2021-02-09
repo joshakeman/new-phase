@@ -1833,6 +1833,7 @@ pre tt:after {
 .blog-preview-list-title {
   text-align: center;
   font-family: 'amienneregular';
+  font-size: 45px;
 }
 
 @media only screen and (max-width: 748px) {
@@ -1905,4 +1906,21 @@ pre tt:after {
 .browse-more-wrapper a:hover {
   color: white;
   text-decoration: none;
+}
+
+.grid {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2em;
+
+  @media (--media-min-small) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (--media-min-medium) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
