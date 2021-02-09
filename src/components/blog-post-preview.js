@@ -9,7 +9,7 @@ function BlogPostPreview (props) {
   return (
     <Link
     //   className={props.isInList ? styles.inList : styles.inGrid}
-    //   to={getBlogUrl(props.publishedAt, props.slug.current)}
+    to={props.slug.current}
     >
       <div >
         {props.mainImage && props.mainImage.asset && (
@@ -24,7 +24,7 @@ function BlogPostPreview (props) {
         )}
       </div>
       <div >
-        <h3 >{props.title}</h3>
+        <h3 className="festivo">{props.title}</h3>
         {props._rawExcerpt && (
           <div >
             <PortableText blocks={props._rawExcerpt} />
