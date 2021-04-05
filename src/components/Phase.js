@@ -11,7 +11,7 @@ export default function Phase({ lady, background, fontColor, title, copy }) {
         <StaticQuery
         query={graphql`
           query {
-            towel: file(relativePath: { eq: "towel_lady_2466.jpg" }) {
+            yoga: file(relativePath: { eq: "yoga_mat_2460.jpg" }) {
               childImageSharp {
                 fluid(maxWidth: 2000) {
                   ...GatsbyImageSharpFluid
