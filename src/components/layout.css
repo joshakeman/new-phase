@@ -1210,6 +1210,7 @@ pre tt:after {
   }
   .phase-card-img {
     max-width: 300px;
+    margin: 0;
   }
 }
 
@@ -1224,7 +1225,7 @@ pre tt:after {
   }
   
   .phase-card-img {
-    max-width: 360px;
+    max-width: 300px;
   }
   
   .phase-card-content-wrap {
@@ -1370,6 +1371,9 @@ pre tt:after {
   .phase-wrapper.your-new-phase {
     background-image: none;
   }
+  .parenthood-bkg {
+    background-position: right;
+  }
 }
 
 .phase-content {
@@ -1395,7 +1399,7 @@ pre tt:after {
   }
   .mobile-phase-bkg>h1 {
     font-family: 'amienneregular';
-    color: var(--main-gold);
+    color: var(--dk-gray);
   }
   .phase-content {
     padding: 0 10px;
@@ -1498,6 +1502,7 @@ pre tt:after {
   }
   .phase-copy>h2 {
     font-size: 62px;
+    text-align: center;
   }
   
   .phase-copy>p {
@@ -1836,4 +1841,18 @@ pre tt:after {
 
 .hidden {
   display: none;
+}
+
+@media only screen and (max-width: 748px) {
+  .contact-wrap>h1 {
+    font-size: 2.25 rem;
+  }
+  .contact-wrap>h2 {
+    font-size: 2 rem;
+  }
+}
+@media only screen and (max-width: 748px) {
+  #gatsby-focus-wrapper > div.layout-wrap > main > div.jumbo-bkg.gatsby-image-wrapper > picture > img {
+    object-position: 20% !important;
+  }
 }
