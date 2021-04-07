@@ -1,9 +1,9 @@
 import React from 'react'
 import PhaseCard from './PhaseCard'
-import punch from '../images/punch_lady.png'
+import punch from '../images/happy_punch_lady.png'
 import lunge from '../images/lunge_lady.png'
 import silverFox from '../images/silver_fox.png'
-import nutrition from '../images/nutrition_lady.png'
+import nutrition from '../images/eating_pregnant.png'
 
 export default function PhaseCards() {
     return (

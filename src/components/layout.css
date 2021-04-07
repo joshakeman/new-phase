@@ -723,12 +723,14 @@ pre tt:after {
 }
 
 .phase-header-nav {
-  /* padding-top: 10px; */
+  z-index: 100;
+  width: 100%;
+  position: absolute;
 }
 
-.phase-header-nav>ul {
+/* .phase-header-nav>ul {
   margin-right: 11% !important;
-}
+} */
 
 .header-nav>ul {
   display: flex;
@@ -747,7 +749,26 @@ pre tt:after {
   margin: 0 10px;
 }
 
+.phase-header-nav>ul {
+  display: flex;
+  z-index: 10;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 0;
+}
+.phase-header-nav>ul>li {
+  font-family: 'festivo_lcbasic';
+  font-size: 40px;
+  color: white;
+  list-style: none;
+  margin: 0 10px;
+}
+
 .spacer {
+  width: 7%;
+}
+
+.mobile-spacer {
   display: none;
 }
 
@@ -784,6 +805,10 @@ pre tt:after {
     display: block;
     width: 40px;
   }
+  .mobile-spacer {
+    display: block;
+    width: 22.5%;
+  }
 }
 
 @media only screen and (max-width: 648px) {
@@ -792,6 +817,10 @@ pre tt:after {
   }
 
   .header-bar {
+    z-index: -15 !important;
+  }
+
+  .phase-header-bar {
     z-index: -15 !important;
   }
 
@@ -881,8 +910,8 @@ pre tt:after {
   overflow: visible;
   width: 100%;
   position: absolute;
-  top: 10px;
-  z-index: -100;
+  top: 18px;
+  z-index: 10;
 }
 
 #header-bar {
@@ -1187,6 +1216,7 @@ pre tt:after {
   }
   .phase-card-img {
     max-width: 300px;
+    margin: 0;
   }
 }
 
@@ -1201,7 +1231,7 @@ pre tt:after {
   }
   
   .phase-card-img {
-    max-width: 360px;
+    max-width: 300px;
   }
   
   .phase-card-content-wrap {
@@ -1227,13 +1257,16 @@ pre tt:after {
 /* Phase Header */ 
 
 .mobile-blog-link {
-  display: none;
+  /* display: none; */
 }
 
 @media only screen and (max-width: 648px) {
   .mobile-blog-link {
-    display: inline-block;
-    font-size: 21px;
+    /* display: inline-block;
+    font-size: 21px; */
+  }
+  .spacer {
+    display: none;
   }
   .desktop-blog-link {
     display: none;
@@ -1325,7 +1358,7 @@ pre tt:after {
   background-size: cover;
 }
 .your-new-phase {
-  background-image: url("../images/towel_lady_2466_extended.jpg");
+  background-image: url("../images/yoga_mat_2460.jpg");
   background-size: cover;
 }
 
@@ -1343,6 +1376,9 @@ pre tt:after {
   }
   .phase-wrapper.your-new-phase {
     background-image: none;
+  }
+  .parenthood-bkg {
+    background-position: right;
   }
 }
 
@@ -1369,7 +1405,7 @@ pre tt:after {
   }
   .mobile-phase-bkg>h1 {
     font-family: 'amienneregular';
-    color: var(--main-gold);
+    color: var(--dk-gray);
   }
   .phase-content {
     padding: 0 10px;
@@ -1472,6 +1508,7 @@ pre tt:after {
   }
   .phase-copy>h2 {
     font-size: 62px;
+    text-align: center;
   }
   
   .phase-copy>p {
@@ -1810,6 +1847,21 @@ pre tt:after {
 
 .hidden {
   display: none;
+}
+
+
+@media only screen and (max-width: 748px) {
+  .contact-wrap>h1 {
+    font-size: 2.25 rem;
+  }
+  .contact-wrap>h2 {
+    font-size: 2 rem;
+  }
+}
+@media only screen and (max-width: 748px) {
+  #gatsby-focus-wrapper > div.layout-wrap > main > div.jumbo-bkg.gatsby-image-wrapper > picture > img {
+    object-position: 20% !important;
+  }
 }
 
 .blog-post-wrapper {

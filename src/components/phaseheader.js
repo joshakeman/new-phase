@@ -5,18 +5,19 @@ import logo from '../images/npf_logo.png'
 
 const Header = () => (
   <>
-  <header class="phase-header-wrap">
+  <header class="header-wrap">
       <div class="phase-logo">
         <img src={logo} />
       </div>
-      <li class="item desktop-blog-link"><a href="/blog" class="np-link">Blog</a></li>
+      {/* <li class="item desktop-blog-link"><a href="/blog" class="np-link">Blog</a></li> */}
   </header>
-  <nav className="header-nav phase-header-nav">
-    <ul id="phase-header">
+  <nav id="phase-header-nav" className="phase-header-nav">
+    <ul>
       <li><a href="/" class="np-link">Home</a></li>
       <li><a href="/contact" class="np-link">Contact</a></li>
-      <span className="spacer"></span>
+      <span className="mobile-spacer"></span>
       <li><a href="/about-me" class="np-link">About</a></li>
+      <span className="spacer"></span>
       {/* <li><a href="/" class="np-link">Contact</a></li> */}
       <li>
         <a href="/blog" class="np-link mobile-blog-link">Blog</a>

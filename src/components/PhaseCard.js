@@ -9,7 +9,7 @@ export default function PhaseCard({ direction, imgSrc, bumpUp, title, copy, path
         <StaticQuery
         query={graphql`
           query {
-            punch: file(relativePath: { eq: "punch_lady.png" }) {
+            punch: file(relativePath: { eq: "happy_punch_lady.jpg" }) {
               childImageSharp {
                 fluid(maxWidth: 2000) {
                   ...GatsbyImageSharpFluid
